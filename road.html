@@ -28,8 +28,26 @@
                 <a href="notice.html"> 공지사항 </a>
                 <a href="road.html"> 오시는길 </a></div>
         </nav>
-
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
+
+
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+    
+    
 
     <main>
         <div class="banner">
@@ -40,9 +58,9 @@
 
         <!--===================================-->
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.029455167613!2d127.12063931507808!3d37.53080293393189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca559b679e829%3A0xe0e6865552431548!2z7ZWY7J2866as!5e0!3m2!1sko!2skr!4v1594878861228!5m2!1sko!2skr" width="900" height="500" frameborder="0" style="box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.2);" allowfullscreen ></iframe></div>
-            
-            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.029455167613!2d127.12063931507808!3d37.53080293393189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca559b679e829%3A0xe0e6865552431548!2z7ZWY7J2866as!5e0!3m2!1sko!2skr!4v1594878861228!5m2!1sko!2skr" width="900" height="500" frameborder="0" style="box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.2);" allowfullscreen></iframe></div>
+
+
 
 
 
@@ -140,6 +158,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

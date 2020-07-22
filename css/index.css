@@ -368,6 +368,7 @@
 
 
 
+/*
 @media (max-width:720px) {
 
     header {
@@ -442,7 +443,6 @@
         text-align: left;
         width: 100%;
 
-        /*       background: deeppink;*/
     }
 
     header nav a:after {
@@ -481,8 +481,6 @@
     .best ul li {
         display: inline-block;
     }
-
-    /*    footer > ul li {align-items: flex-start}*/
 
     footer > ul li a {
         padding: 0px;
@@ -538,3 +536,4 @@
 
 
 }
+*/
