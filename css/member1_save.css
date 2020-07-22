@@ -1,0 +1,196 @@
+@import url(common.css);
+body{
+    position:relative;
+}
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+.member {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    background: #ededed;
+    padding: 50px 0px;
+    text-align: right;
+    width: 20%;
+}
+
+.menu h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+
+.menu ul {}
+
+.menu ul li {}
+
+.menu ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 10px;
+    position: relative;
+    color: #666;
+    transition: .7s;
+}
+
+.menu ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.menu ul li:hover a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+/*회원정보*/
+.info{
+    text-align: center;
+    width:80%;
+    margin:40px auto;
+    padding:0 50px;
+}
+.info h2{
+    font-size:25px;
+    margin-bottom:35px;
+    text-align: center;
+}
+.info form{}
+
+.edit{}
+.edit ul{}
+.edit ul li{
+    font-size:15px;
+    padding:7px 0;
+}
+.edit ul li label{
+    margin-right: 20px;
+    width:100px;
+    text-align: right;
+    display:inline-block;
+}
+.edit ul li span{
+    width:50%;
+    display:inline-block;
+    text-align: left;
+}
+.edit ul li > input{
+    background: #ededed;
+    width: 50%;
+    outline-style: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+/*회원정보-전화번호*/
+.phone{}
+.phone label{}
+.phone select{
+    outline-style: none;
+    margin-bottom: 10px;
+    width: 12%;
+    padding: 14px 20px;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.phone select option{}
+.phone input{
+    outline-style: none;
+    width: 13%;
+    padding: 14px 20px;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.phone input:nth-of-type(3) {
+    width: 10%;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    padding: 12px 20px;
+}
+
+.phone input:nth-of-type(3):hover {
+    background: #444;
+}
+
+/*취소, 저장버튼*/
+.info a{
+    display:inline-block;
+    background:#ad74ce;
+    color:#fff;
+    padding:8px 60px;
+    border-radius: 10px;
+    transition:.5s;
+    margin-top:40px;
+}
+
+.info a:hover{
+    background:#8953a8;
+}
+
+/*팝업*/
+.reyer{
+    position:fixed;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+}
+.popup{
+    position:absolute;
+    left:50%; top:50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    text-align: center;
+    border-radius: 10px;
+    color:#333;
+    
+}
+.popup p{
+    font-size:18px;
+    border-bottom:2px solid #ededed;
+    padding:35px 125px;
+    
+}
+.popup a{
+    font-size:15px;
+    padding:10px 125px;
+    display: inline-block;
+}
+
+
+@media (max-width:992px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1178px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}

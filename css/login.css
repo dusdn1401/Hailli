@@ -1,0 +1,86 @@
+@import url(common.css);
+
+/*=====main=====*/
+main {
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+}
+
+.login {
+    position: relative;
+    background:url(../img/img_cafe.jpg)0 no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    width: 700px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.form h1 {
+    margin-bottom:35px;
+}
+
+.inp {}
+
+.inp p {}
+
+.inp p input {
+    outline-style: none;
+    width: 60%;
+    padding: 15px 20px;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.inp p:nth-of-type(2) input {
+    margin: 10px;
+}
+
+.inp p:nth-of-type(3) input {
+    background: #ad74ce;
+    color: white;
+    width: 60%;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition:.5s;
+}
+.inp p:nth-of-type(3) input:hover{
+    background:#8953A8;
+}
+
+.find {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.find a{
+    margin: 10px;
+    font-size: 12px;
+}
+.find a:hover{
+    font-weight: bold;
+    color:#333;
+}
+.find a:nth-of-type(3) {
+    color: #ad74ce;
+    font-weight: bold;
+}
+.find a:nth-of-type(3):hover{
+    color:#8953A8;
+}

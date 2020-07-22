@@ -1,0 +1,217 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+    height: 700px;
+}
+
+.member {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    background: #ededed;
+    padding: 50px 0px;
+    text-align: right;
+    width: 20%;
+}
+
+.menu h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+
+.menu ul {}
+
+.menu ul li {}
+
+.menu ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 10px;
+    position: relative;
+    color: #666;
+    transition: .7s;
+}
+
+.menu ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.menu ul li:hover a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.cart {
+    margin: 40px auto;
+    padding: 0 50px;
+    width:80%;
+}
+
+.cart h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.tab {
+    text-align: center;
+}
+
+.tab div {
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px;
+}
+
+.tab div label {
+    font-size: 15px;
+}
+
+.tab div label input {
+    display: inline-block;
+    border-radius:  100%;
+    background: #ededed;
+}
+
+.tab div span {}
+
+.tab div span a {
+    background: none; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.cart_table {
+    border-spacing: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cart_table thead {}
+
+.cart_table thead tr {}
+
+.cart_table thead th {
+    background: #ededed;
+    color: #333;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cart_table thead th:nth-of-type(1) {
+    width: 2%;
+}
+
+.cart_table thead th:nth-of-type(2) {
+    width: 20%;
+}
+
+.cart_table thead th:nth-of-type(3) {
+    width: 40%;
+}
+
+.cart_table thead th:nth-of-type(4) {
+    width: 8%;
+}
+
+.cart_table thead th:nth-of-type(5) {
+    width: 10%;
+}
+
+.cart_table tbody {}
+
+.cart_table tbody tr {}
+
+.cart_table tbody td {
+    border-bottom:double;
+    border-color: #ededed;
+    padding:12px;
+    text-align: left;
+}
+
+.cart_table tbody td img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.cart_table tbody td a {
+    font-size: 15px;
+    padding-left: 15px;
+    color: #333;
+}
+
+.cart_table tbody td p {
+    font-size: 15px;
+}
+
+.cart_table tbody td p input {
+    border: 1px solid #ededed;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.cart_table tbody td:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_table tbody td:nth-of-type(3){
+    text-overflow:ellipsis;
+    line-height: 1.5;
+}
+.total{
+    display: flex;
+}
+.total span{}
+.total span:nth-of-type(1){
+    margin-left:60%;
+}
+
+.tab > a{
+    background:#AD74CE;
+    padding:10px 70px;
+    border-radius: 10px;
+    display:inline-block;
+    margin:40px auto;
+    color:#fff;
+    transition:.5s;
+}
+.tab > a:hover{
+    background:#8953A8;
+}
+
+@media (max-width:992px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1178px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}

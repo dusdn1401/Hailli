@@ -1,0 +1,43 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+    height: 700px;
+}
+
+
+.qna {
+    margin: 0 auto;
+    padding: 0 50px;
+    width:80%;
+    height:100%;
+}
+
+.qna h2 {
+    font-size: 25px;
+    padding:40px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+.content p{
+    margin-top:100px;
+    color:#666;
+    font-size:18px;
+}
+
+.content a{
+    background:#AD74CE;
+    padding:10px 70px;
+    border-radius: 10px;
+    display:inline-block;
+    margin:40px auto;
+    color:#fff;
+    transition:.5s;
+}
+.content a:hover{
+    background:#8953A8;
+}

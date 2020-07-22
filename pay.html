@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cafe__HAILLI </title>
+
+
+    <link rel="stylesheet" href="css/pay.css" type="text/css">
+
+    <link rel="icon" href="img/favi.ico">
+
+</head>
+
+<body>
+
+      <header>
+        <div class="top">
+            <h1> <a href="index.html">〈 HAILLI 〉</a> </h1>
+            <div class="gnb">
+                <a href="login.html"> 로그인 </a>
+                <a href="member1.html"> MY페이지 </a>
+                <a href="qna_none.html"> 1:1 문의 </a> </div>
+        </div>
+        <nav>
+            <div>
+                <a href="cafe.html"> 카페소개 </a>
+                <a href="reservation.html"> 예약하기 </a>
+                <a href="review.html"> 이용후기 </a>
+                <a href="notice.html"> 공지사항 </a>
+                <a href="road.html"> 오시는길 </a></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="pay">
+            <article class="goods">
+                <h2>01. 주문상품</h2>
+                <div class="goods_tab">
+                    <div>
+
+                        <label>
+                            <input type="checkbox" name="choice" value="choice">
+                            전체상품 선택
+                        </label>
+
+
+                        <span>
+                            1개 선택
+                            <a href="">
+                                <img src="img/trash.png" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <table class="goods_table">
+
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>상품정보</th>
+                                <th>옵션</th>
+                                <th>수량</th>
+                                <th>상품금액</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" value="choice">
+                                </td>
+                                <td>
+                                    <img src="img/19.jpg" alt="">
+                                    <a href="">하트 시트 케이크
+                                        33,000원</a>
+                                </td>
+                                <td>
+                                    <p>사이즈: 1호(24000원), 레터링: 우리 사이 오래오래, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
+                                </td>
+                                <td>
+                                    <p><input type="number" min="1" max="10" value="1">
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        33,000원
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!--            주문자 정보-->
+            <article class="user_info">
+                <h3>02. 주문자 정보</h3>
+                <form action="">
+                    <div class="user">
+                        <ul>
+                            <li>
+                                <label for="">이름</label>
+                                <input type="text" name="name">
+                            </li>
+                            <li>
+                                <label for="">전화번호</label>
+                                <input type="text" name="phone_number">
+                            </li>
+                            <li></li>
+                        </ul>
+                        <p><input type="checkbox"> 주문 고객과 동일</p>
+                    </div>
+                </form>
+            </article>
+
+
+            <!--                결제하기-->
+            <article class="good_pay">
+                <h4>03. 결제하기</h4>
+                
+                <ul>
+                    <li>
+                        <span>상품금액</span>
+                        <span>30,000원</span>
+                    </li>
+                    <li>
+                        <span>옵션</span>
+                        <span>3,000원</span>
+                    </li>
+                    <li>
+                        <span>총 결제금액</span>
+                        <span>33,000원</span>
+                    </li>
+                </ul>
+            </article>
+
+
+            <!--                결제수단-->
+            <article class="pay_select">
+                <h5>04. 결제수단</h5>
+                <div class="pay_option">
+                    <label for="">
+                        신용카드
+                        <input type="radio" value="creditcard" name="pos" id="pos1">
+                    </label>
+                    <label for="">
+                        계좌이체
+                        <input type="radio" value="account" name="pos" id="pos2">
+                    </label>
+                </div>
+                <p><input type="checkbox"> 상품 주문 및 사용자 정보 수집에 동의합니다.<span>(필수)</span></p>
+                <p><input type="checkbox"> 주문 상품의 명시내용과 사용조건을 확인하였으며, 취소환불 규정에 동의합니다.<span>(필수)</span></p>
+            </article>
+
+
+            <a href="pay_ok.html">주문하기</a>
+        </div>
+    </main>
+
+
+   <footer>
+        <ul>
+            <li>
+                <p>업체명 : 하일리
+                    사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
+                    주소 : 서울시 강동구 성내로3길 18
+                    전화번호 : 070-8775-0010
+                </p>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
+                    <img src="img/instagram-fill.png"></a>
+                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
+                    <img src="img/kakao-talk-fill.png"></a>
+            </li>
+        </ul>
+    </footer>
+</body></html>

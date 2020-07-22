@@ -1,0 +1,488 @@
+@import url('common.css');
+
+
+/**********버거**********/
+.menu-trigger {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    transition: .5s;
+    right: 5vw;
+    top: 5vw;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ad74ce;
+}
+
+.menu-trigger .active span {
+    background: lightskyblue;
+}
+
+.munu-trigger .active {
+    transform: rotate(90deg);
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0%;
+}
+
+
+
+/**********배너**********/
+.banner {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner h2 {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: #333333;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+
+/**********본문 예약하기**********/
+.re {
+    width: 1080px;
+    height: 600px;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.tab {
+    margin-top: 40px;
+    float: left;
+}
+
+.tab-head {
+    margin: 10px;
+}
+
+.tab-body a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.tab-body a.active {
+    background: white;
+    color: #fff;
+}
+
+.tab-body a img {
+    width: 120px;
+}
+
+.tab .tab-head {
+    position: relative;
+    height: 400px;
+}
+
+.tab-head div {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #00f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    /*        display: none;*/
+}
+
+.tab-head div.active {
+    display: block;
+}
+
+/*예약선택*/
+table {
+    color: #333333;
+    font-size: 15px;
+
+    float: right;
+    margin-top: 20px;
+}
+
+tbody {}
+
+tbody tr {}
+
+tbody tr th {
+    text-align: right;
+    line-height: 1;
+}
+
+tbody tr td {
+    padding: 10px;
+}
+
+tbody tr td input {
+    text-align: center;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+}
+
+tbody tr td select {
+    width: 150px;
+    padding: 8px;
+    background: #ededed;
+    border-radius: 10px;
+    border: none;
+}
+
+tbody tr td textarea {
+    width: auto;
+    padding: 5px;
+    background: #ededed;
+    border-radius: 10px;
+    border: none;
+
+}
+
+tbody tr:nth-of-type(1) {}
+
+tbody tr:nth-of-type(2) {}
+
+tbody tr:nth-of-type(3) {}
+
+tbody tr:nth-of-type(4) {}
+
+tbody tr:nth-of-type(5) {}
+
+tbody tr:nth-of-type(6) {}
+
+tbody tr:nth-of-type(7) th small {
+    float: none;
+    font-size: 10px;
+}
+
+tbody tr:nth-of-type(8) {}
+
+
+
+/*금액*/
+tfoot {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+tfoot tr {
+    text-align: center;
+}
+
+tfoot tr th {
+    text-align: right;
+}
+
+tfoot tr td {
+    text-align: right;
+}
+
+tfoot tr:nth-of-type(1) {}
+
+tfoot tr:nth-of-type(2) {}
+
+tfoot tr:nth-of-type(3) {
+    font-size: 20px;
+}
+
+/**********버튼**********/
+.but {
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.button {
+    float: right;
+
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.button a {
+    width: 257px;
+    height: 50px;
+    display: inline-block;
+    margin: 20px 5px;
+    padding: 1.5% 0;
+}
+
+/*장바구니*/
+.button a:nth-of-type(1) {
+    font-size: 15px;
+    color: #333333;
+    line-height: 2;
+
+    border: 1px solid #ededed;
+    background: #ededed;
+    border-radius: 10px;
+
+}
+
+/*예약하기*/
+.button a:nth-of-type(2) {
+
+    font-size: 15px;
+    color: #fcfbe3;
+    line-height: 2;
+
+    border: 1px solid #ad74ce;
+    background: #ad74ce;
+    border-radius: 10px;
+}
+
+/**********상세설명**********/
+.list {
+    width: 1080px;
+    margin: 0 auto;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.list header {
+    background: #fcfbe3;
+    border-radius: 10px;
+}
+
+.list header p {
+    color: #333333;
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+.list img {
+    width: 100%;
+    margin: 10% auto;
+}
+
+
+
+/*---------모바일 480----------*/
+
+
+@media (max-width:480px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 2em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 12px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    slide {
+        width: 100%;
+    }
+
+    .banner {
+
+        background: url(../img/116.jpg) no-repeat 20% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 20vw;
+        /*
+        width: 50%;
+        height: 50%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+*/
+    }
+
+    .banner h2 {
+        font-size: 20px;
+        /*
+        position: absolute;
+        left: 0; top: 0;
+        transform: translate(-50%, -50%);
+        color: #333333;
+*/
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    main {width: 100%;}
+
+    .re {
+        height: auto;
+        width: 100%;
+        overflow: none;
+    }
+
+    .re .tab {
+        float: none;
+        width: 100%;
+    }
+
+    .re .tab .tab-head {
+        width: 100%;
+
+    }
+
+    .tab-head div {
+        width: 95%;
+    }
+
+    .re .tab .tab-body {
+        width: 100%;
+    }
+
+    .tab-body a {
+        width: 27%;
+    }
+
+    .tab-body a img {
+        width: 100%;
+    }
+
+    .tab-head div.active {
+/*        display: block;*/
+    }
+
+    table {
+        float: none;
+        width: auto;
+    }
+
+    table tbody {
+        width: 100%;
+    }
+    tbody tr{
+        width: 100%;
+    }
+    .table tbody th:nth-of-type(1){
+        width: 30%;
+    }
+
+    .but {
+        width: auto;
+    }
+
+    .button {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .but .button a {
+        width: 30%;
+        height: 30%;
+        font-size: 10px;
+    }
+
+    .list {
+        width: auto;
+    }
+
+    .list header p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .list img {
+        width: 100%;
+    }
+
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+}

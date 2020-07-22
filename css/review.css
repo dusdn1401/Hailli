@@ -1,0 +1,408 @@
+@import url('common.css');
+
+
+/**********버거**********/
+.menu-trigger {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    transition: .5s;
+    right: 5vw;
+    top: 5vw;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ad74ce;
+}
+
+.menu-trigger .active span {
+    background: lightskyblue;
+}
+
+.munu-trigger .active {
+    transform: rotate(90deg);
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0%;
+}
+
+
+/**********배너**********/
+.banner {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner h2 {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+
+/**********본문 베스트**********/
+.best {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.list {}
+
+.best .list h2 {
+    line-height: 5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.list ul {}
+
+.list ul li {
+    margin: 0px 40px;
+}
+
+.list ul li figure {
+    position: relative;
+}
+
+.list ul li figure img {
+    width: 100%;
+    height: 15vw;
+}
+
+.list ul li figure figcaption {
+    white-space: pre-line;
+
+    position: absolute;
+    background: rgba(10, 10, 10, 0.5);
+    color: white;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 13px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+
+    line-height: 2;
+}
+
+.list ul li:hover figure figcaption {
+    opacity: 1;
+}
+
+.name {
+    font-size: 13px;
+    display: flex;
+}
+
+.name p:nth-of-type(1) {}
+
+.name p:nth-of-type(2) {
+    margin-left: 60%;
+}
+
+/**********본문 일반후기**********/
+.normal {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.list2 {}
+
+.list2 h2 {
+    line-height: 5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.list2 ul {}
+
+.list2 ul li {}
+
+.list2 ul li figure {
+    overflow: hidden;
+    margin-bottom: 15%;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.list2 ul li figure img {
+    width: 100%;
+    height: 13vw;
+}
+
+.list2 ul li figure span {
+    margin: 0 3%;
+}
+
+.list2 ul li figure span:nth-of-type(1) {}
+
+.list2 ul li figure span:nth-of-type(2) {
+    float: right;
+}
+
+.list2 ul li figure img:hover {
+    filter: brightness(110%);
+}
+
+/**********글쓰기 버튼**********/
+.button {
+    text-align: center;
+    margin: 0 auto;
+    width: 1080px;
+    overflow: hidden;
+}
+
+.button a {
+    float: right;
+
+    border: 1px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #ad74ce;
+    color: #fcfbe3;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/**********페이지 버튼**********/
+.paging {
+    text-align: center;
+    margin: 3% 0;
+}
+
+.paging a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    padding: 1%;
+}
+
+.paging a:hover:after,
+.paging a.active:after {
+    content: '';
+    border: 1px solid #777777;
+    width: 100%;
+    display: block;
+    text-decoration-color: red;
+}
+
+
+
+/*---------모바일 480----------*/
+
+
+@media (max-width:480px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 2em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 12px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    slide {
+        width: 100%;
+    }
+
+    .banner {
+
+        background: url(../img/116.jpg) no-repeat 20% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 20vw;
+        /*
+        width: 50%;
+        height: 50%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+*/
+    }
+
+    .banner h2 {
+        font-size: 20px;
+        /*
+        position: absolute;
+        left: 0; top: 0;
+        transform: translate(-50%, -50%);
+        color: #333333;
+*/
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .best {
+        width: 100%;
+    }
+
+    .list {
+        width: 100%;
+
+    }
+
+    .best .list h2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .list ul li figure {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .list ul li figure img {
+        width: 40%;
+        height: 30vw;
+    }
+
+    .list ul li a figure figcaption {
+        opacity: 1;
+    }
+
+    .list ul li a figure figcaption h3 {}
+
+    .list ul li a figure figcaption div {}
+
+    .normal {
+        width: 100%;
+    }
+
+    .list2 {}
+
+    .list2 h2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .list2 ul {
+        display: flex;
+    }
+
+    .list2 ul li {}
+
+    .list2 ul li a {}
+
+    .list2 ul li a figure {
+        width: 100%;
+        height: auto;
+    }
+
+    .list2 ul li a figure img {
+        width: 100%;
+        height: 40vw;
+    }
+
+    .button {
+        width: 100%;
+        height: 20vw;
+    }
+
+    .button a {
+        font-size: 10px;
+    }
+
+    .h_f p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,306 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+
+.pay {}
+
+.goods {
+    margin: 40px auto;
+    padding: 0 50px;
+    width: 90%;
+}
+
+.goods h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.goods_tab {
+    text-align: center;
+}
+
+.goods_tab div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.goods_tab div label {
+    font-size: 15px;
+}
+
+.goods_tab div label input {
+    display: inline-block;
+    border-radius: 100%;
+    background: #ededed;
+}
+
+.goods_tab div span {}
+
+.goods_tab div span a {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.goods_table {
+    border-spacing: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.goods_table thead {}
+
+.goods_table thead tr {}
+
+.goods_table thead th {
+    background: #ededed;
+    color: #333;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.goods_table thead th:nth-of-type(1) {
+    width: 2%;
+}
+
+.goods_table thead th:nth-of-type(2) {
+    width: 20%;
+}
+
+.goods_table thead th:nth-of-type(3) {
+    width: 40%;
+}
+
+.goods_table thead th:nth-of-type(4) {
+    width: 8%;
+}
+
+.goods_table thead th:nth-of-type(5) {
+    width: 10%;
+}
+
+.goods_table tbody {}
+
+.goods_table tbody tr {}
+
+.goods_table tbody td {
+    border-bottom: double;
+    border-color: #ededed;
+    padding: 12px;
+    text-align: left;
+}
+
+.goods_table tbody td img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.goods_table tbody td a {
+    font-size: 15px;
+    padding-left: 15px;
+    color: #333;
+}
+
+.goods_table tbody td p {
+    font-size: 15px;
+}
+
+.goods_table tbody td p input {
+    border: 1px solid #ededed;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.goods_table tbody td:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods_table tbody td:nth-of-type(3) {
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+
+
+/*사용자 정보*/
+.user_info {
+    margin: 40px auto;
+    border-bottom: 5px double #ededed;
+    width:80%;
+}
+
+.user_info h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.user_info form {}
+
+.user {
+    text-align: center;
+    position: relative;
+}
+
+.user ul {
+    margin-bottom: 40px;
+}
+
+.user ul li {
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+.user ul li label {
+    display: inline-block;
+    margin-right: 40px;
+    width: 100px;
+    text-align: right;
+}
+
+.user ul li input {
+    background: #ededed;
+    width: 40%;
+    border: none;
+    outline-style: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.user p {
+    font-size: 15px;
+    vertical-align: middle;
+    position: absolute;
+    right: 23%;
+    bottom: 0;
+}
+
+.user p input {}
+
+/*결제하기*/
+.good_pay {
+    margin: 40px auto;
+    border-bottom: 1px solid #ededed;
+    width:80%;
+}
+
+.good_pay h4 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.good_pay ul{
+    text-align: center;
+    margin-bottom:40px;
+}
+.good_pay ul li{}
+.good_pay ul li span{
+    display:inline-block;
+    width:100px;
+    margin:5px;
+    font-size:15px;
+    text-align: right;
+}
+.good_pay ul li:nth-of-type(3) span{
+    font-size:20px;
+}
+
+.good_pay ul li span:nth-of-type(2){
+    margin-left:20%;
+    text-align: left;
+}
+
+/*결제수단*/
+.pay_select{}
+.pay_select h5{
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.pay_option{
+    margin-top:30px auto;
+    display:flex;
+    justify-content: center;
+}
+.pay_option label{
+    display:block;
+    border:1px solid #666;
+    padding:30px 70px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.pay_option label:nth-of-type(1){
+    border-radius: 10px 0 0 10px;
+}
+.pay_option label:nth-of-type(2){
+    border-radius: 0 10px 10px 0;
+}
+.pay_option label:nth-of-type(1):before{
+ background:url('../img/icon_card.svg') no-repeat;
+    height:50px;
+    content:'';
+    display:block;
+    padding-bottom: 10px;
+}
+
+.pay_option label:nth-of-type(2):before{
+     background:url('../img/icon_wallet.svg') no-repeat;
+    height:50px;
+    content:'';
+    display:block;
+    padding-bottom: 10px;
+}
+.pay_option label input{
+    display:none;
+}
+/*
+#pos1:checked ~ .pay_option label:nth-of-type(1),
+#pos1:checked ~ .pay_option label:nth-of-type(2){
+    border-color:#ff0;
+    background:#f00;
+}
+*/
+.pay_select p{
+    font-size:15px;
+    margin-left:32%;
+}
+.pay_select p input{}
+.pay_select p span{
+    color:#f00;
+    font-weight: bold;
+}
+
+
+
+/*결제하기 버튼*/
+.pay > a {
+    background: #AD74CE;
+    padding: 10px 70px;
+    border-radius: 10px;
+    display:block;
+    text-align: center;
+    width:20%;
+    margin: 40px auto;
+    color: #fff;
+    transition: .5s;
+}
+
+.pay > a:hover {
+    background: #8953A8;
+}

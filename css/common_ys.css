@@ -1,0 +1,458 @@
+html,
+body,
+strong {
+    margin: 0;
+    font-family: THE봉숭아틴트;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* *로 시작하는건 모든태그에 명령, 다른 style값보다 더 강력, 먼저 적용*/
+
+
+/*=========header============*/
+header {
+    background: #fff;
+    height: 26vh;
+
+
+}
+
+header .top {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+header .top h1 {
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header .top h1 a {
+    font-size: 50px;
+    color: #333;
+}
+
+header .top .gnb {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+header .gnb a {
+    color: #333;
+    padding: 20px;
+}
+
+
+header nav {
+    width: 100%;
+    height: 6vh;
+    background: #333;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    word-spacing: 150px;
+
+}
+
+
+header nav a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+header nav a:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+}
+
+header nav a:hover {}
+
+header nav a:hover:after {
+    opacity: 1;
+}
+
+
+/*====footer====*/
+
+
+footer {
+    background: #333;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 160px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer > ul li p {
+    color: #777;
+    white-space: pre-line;
+}
+
+footer > ul li:nth-of-type(2) a {
+    padding: 10px;
+}
+
+
+/*========================================*/
+
+
+
+/*버거메뉴*/
+.menu-trigger {
+    width: 20px;
+    height: 18px;
+    position: fixed;
+    top: 5vw;
+    right: 5vw;
+
+    display: none;
+    transition: .5s;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    border-radius: 4px;
+}
+
+.menu-trigger.active span {
+    background: #333;
+}
+
+.menu-trigger.active {
+    transform: rotate(90deg);
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+
+
+
+/*=========반응형============*/
+
+
+@media (max-width:480px) {
+    header article {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0px;
+        position: relative;
+    }
+
+    header article h1 {
+        margin:0 auto;
+        width:40%;
+    }
+    header article h1 a {}
+
+header article h1 a img {
+    width:100%;
+    }
+
+    header article ul {
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header article ul li {
+        padding: 0;
+
+    }
+
+    header article ul li a {
+        color: #333;
+        font-size: 13px;
+    }
+
+    header nav {
+        background: #333;
+        padding: 2px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 0 10px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        font-size: 15px;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    header nav ul li a:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    header nav ul li:hover a:after {
+        opacity: 1;
+    }
+
+    footer .footer {
+        margin: 0 auto;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+@media (min-width:481px) and (max-width:760px) {
+    header article {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    header article h1 {
+        text-align: center;
+    }
+
+    header article ul {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        opacity: 1;
+    }
+
+    header article ul li {
+        padding: 0 10px;
+
+    }
+
+    header article ul li a {
+        color: #333;
+        font-size: 15px;
+    }
+
+    header nav {
+        background: #333;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        font-size: 18px;
+        position: relative;
+    }
+
+    header nav ul li a:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    header nav ul li:hover a:after {
+        opacity: 1;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+@media (min-width:761px) and (max-width:992px) {
+    header article {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    header article h1 {
+        text-align: center;
+    }
+
+    header article ul {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        opacity: 1;
+    }
+
+    header article ul li {
+        padding: 0 10px;
+
+    }
+
+    header article ul li a {
+        color: #333;
+        font-size: 15px;
+    }
+
+    header nav {
+        background: #333;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        font-size: 18px;
+        position: relative;
+    }
+
+    header nav ul li a:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    header nav ul li:hover a:after {
+        opacity: 1;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media (min-width:993px) and (max-width:1055px){
+     header nav ul li a {
+        color: #fff;
+        font-size: 19px;
+        position: relative;
+    }
+}
+

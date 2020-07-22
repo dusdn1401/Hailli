@@ -1,0 +1,638 @@
+@import url(common.css);
+
+/*====================================*/
+
+header {
+    background: #fff;
+    height: 26vh;
+
+
+}
+
+header .top {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+header .top h1 {
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header .top h1 a {
+    font-size: 50px;
+    color: #333;
+}
+
+header .top .gnb {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+header .gnb a {
+    color: #333;
+    padding: 20px;
+}
+
+
+header nav {
+    width: 100%;
+    height: 6vh;
+    background: #333;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    word-spacing: 150px;
+
+}
+
+
+header nav a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+header nav a:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+}
+
+header nav a:hover {}
+
+header nav a:hover:after {
+    opacity: 1;
+}
+
+
+/*=========================================*/
+
+
+.banner input {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner .imgs {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.banner .imgs a {
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+
+
+.banner .imgs a:nth-of-type(1) {
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner .imgs a:nth-of-type(2) {
+    background: url(../img/banner2.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.banner .indi {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .indi label {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.banner .indi label:hover {
+    background: #333;
+}
+
+#pos1:checked ~ .indi label:nth-of-type(1),
+#pos2:checked ~ .indi label:nth-of-type(2) {
+    background: #333;
+}
+
+#pos1:checked ~ .imgs a:nth-of-type(1),
+#pos2:checked ~ .imgs a:nth-of-type(2) {
+    opacity: 1;
+}
+
+
+
+
+
+/*=========================================*/
+
+
+
+.sample {}
+
+.sample h2 {
+    padding: 30px 0 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.sample p {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.sample p:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 40px auto;
+}
+
+.sample h2 {
+    font-size: 3em;
+}
+
+.sample p {
+    font-size: 15px;
+    ;
+}
+
+
+/*==========================================*/
+.main {}
+
+.list li {
+    padding: 0;
+}
+
+.list li figure img {
+    width: 100%;
+    height: 16vw;
+}
+
+.list li figure {
+    position: relative;
+}
+
+.list li figure figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    font-size: 1.5em;
+}
+
+.list li figure figcaption a {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.list li:hover figure figcaption {
+    opacity: 1;
+    transition: .5s
+}
+
+/*======================================*/
+.service {
+    text-align: center;
+    background: #ededed;
+    padding: 60px 0;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.service h2 {
+    font-size: 3em;
+    padding-bottom: 5px;
+}
+
+.service p {
+    font-size: 15px;
+}
+
+.service p:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 40px auto;
+
+}
+
+.service ul {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.service ul li {}
+
+.service ul li a {
+    color: #333;
+}
+
+.service ul li a figure {}
+
+.service ul li a figure img {}
+
+.service ul li a figure figcaption {
+    padding: 20px;
+}
+
+/*======================================*/
+
+
+.best {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.best h2 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+.best p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.best > p:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 40px auto;
+}
+
+.best ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.best ul li {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 60%;
+}
+
+
+.best ul li img {
+    width: 100%;
+    height: 15vw;
+}
+
+.best ul li article {
+    position: relative;
+    padding: 20px;
+}
+
+.best ul li article > a {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    background: #ff6565;
+    width: 8vw;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.best ul li article > a > img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.best ul li article a h3 {
+    color: white;
+    font-size: 1vw;
+}
+
+.best ul li article p {
+    text-align: left;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 30px 10px;
+}
+
+.best ul li article div p a {}
+
+.best > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+/*========================================*/
+
+footer {
+    background: #333;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 160px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer > ul li p {
+    color: #777;
+    white-space: pre-line;
+}
+
+footer > ul li:nth-of-type(2) a {
+    padding: 10px;
+}
+
+
+/*=========================================*/
+
+.menu-trigger {
+    width: 26px;
+    height: 16px;
+    position: fixed;
+    top: 80px;
+    right: 7vw;
+    display: none;
+    transition: .5s;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+}
+
+.menu-trigger.active span {
+    background: skyblue;
+}
+
+.menu-trigger.active {
+    transform: rotate(180deg);
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+
+/*=========================================*/
+
+
+
+@media (max-width:720px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%; height: 25vh;
+
+
+    }
+
+    header .top {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    header .top h1 {
+        height: 160px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+    }
+
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header nav {
+        position: fixed;
+        top: 20vh;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+
+        display: flex;
+        align-items: flex-start;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 5;
+        width: 40%;
+
+    }
+
+
+    header nav a {
+        padding: 30px;
+        font-size: 20px;
+        color: white;
+        display: block;
+        position: static;
+        left: 0;
+        top: 50px;
+        text-align: left;
+        width: 100%;
+
+        /*       background: deeppink;*/
+    }
+
+    header nav a:after {
+        display: none;
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 70px;
+        background: white;
+        left: 0;
+        bottom: -5px;
+        opacity: 0;
+    }
+
+    header nav a:hover {}
+
+    header nav a:hover:after {
+        opacity: 1;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 3;
+    }
+
+
+    .list li:nth-child(1n+5) {
+        display: none;
+    }
+
+    .list li figure a img {
+        height: 30vh;
+    }
+    .list li figure figcaption{display: none;}
+
+    .best ul li {
+        display: inline-block;
+    }
+
+    /*    footer > ul li {align-items: flex-start}*/
+
+    footer > ul li a {
+        padding: 0px;
+    }
+
+
+    .best ul {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .best ul li {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        margin: 20px 50px 0 0;
+        width: 100%;
+
+    }
+
+
+    .best ul li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .best ul li:nth-child(2),
+    .best ul li:nth-child(3) {
+        display: none;
+    }
+
+    .best ul li article > a {
+        width: 25vw;
+        top: -18px;
+    }
+
+    .service ul {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between
+    }
+
+    .banner .imgs a:nth-of-type(1) {
+        background: url(../img/m1banner.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .banner .imgs a:nth-of-type(2) {
+        background: url(../img/m2banner.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+}

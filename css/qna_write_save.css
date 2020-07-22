@@ -1,0 +1,157 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+
+.qna_write {
+    margin: 0 auto;
+    padding: 0 50px;
+    width:90%;
+    height:100%;
+}
+
+.qna_write h2 {
+    font-size: 25px;
+    padding-top:40px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom:5px double #ededed;
+}
+.qna_write > p{
+    text-align: center;
+    font-size:18px;
+    margin:40px;
+}
+.qna_write > p input{}
+.qna_write > p span{
+    color:#f00;
+}
+
+.content {
+    padding-top:40px;
+    display:flex;
+    justify-content: space-around;
+    border-bottom:5px double #ededed;
+    padding-bottom:30px;
+}
+
+.m_info{
+    width:48%;
+}
+.m_info > p{
+    margin-bottom:35px;
+}
+.m_info form{}
+.m_info form ul{}
+.m_info form ul li{
+    padding:7px 0;
+}
+.m_info form ul li label{
+    width:100px;
+    text-align: right;
+    display:inline-block;
+    padding-left:15px;
+}
+.m_info form ul li input{
+    background: #ededed;
+    width: 65%;
+    outline-style: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.data{
+    width:48%;
+}
+.data > p{
+    margin-bottom:35px;
+}
+.data form{}
+.data form ul{}
+.data form ul li{
+    padding:7px 0;
+}
+.data form ul li label{
+    width:100px;
+    text-align: right;
+    display:inline-block;
+    padding-left:15px;
+}
+.data form ul li input{
+    background: #ededed;
+    width: 70%;
+    outline-style: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.data form ul li textarea{
+    background:#ededed;
+    outline-style: none;
+    border:none;
+    border-radius: 10px;
+    width:70%;
+}
+
+.data form ul li:nth-of-type(3) input{
+background:none;
+}
+.data form ul li p{
+    font-size:15px;
+    margin-bottom: 5px;
+    margin-left:110px;
+}
+.data form ul li > *{vertical-align: middle;}
+
+.qna_write p a{
+    padding:10px 60px;
+    background:#ededed;
+    border-radius: 10px;
+    transition: .5s;
+}
+.qna_write p a:nth-of-type(2){
+    background:#ad74ce;
+    color:#fff;
+}
+.qna_write p a:nth-of-type(1):hover{
+    background:rgba(0,0,0,0.3);
+}
+.qna_write p a:nth-of-type(2):hover{
+    background:#8953A8;
+}
+
+/*팝업*/
+.reyer{
+    position:fixed;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+}
+.popup{
+    position:absolute;
+    left:50%; top:50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    text-align: center;
+    border-radius: 10px;
+    color:#333;
+    
+}
+.popup p{
+    font-size:18px;
+    border-bottom:2px solid #ededed;
+    padding:35px 125px;
+    
+}
+.popup a{
+    font-size:15px;
+    padding:10px 125px;
+    display: inline-block;
+}

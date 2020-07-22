@@ -1,0 +1,198 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+    height: 700px;
+}
+
+.member {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    background: #ededed;
+    padding: 50px 0px;
+    text-align: right;
+    width: 20%;
+}
+
+.menu h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+
+.menu ul {}
+
+.menu ul li {}
+
+.menu ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 10px;
+    position: relative;
+    color: #666;
+    transition: .7s;
+}
+
+.menu ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.menu ul li:hover a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.order {
+    margin: 40px auto;
+    padding: 0 50px;
+    width:80%;
+}
+
+.order h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.order_list {}
+.order_list span{
+    padding:5px 10px;
+}
+
+
+.order_table {
+    border-spacing: 0;
+    border-radius: 10px;
+    margin-top:5px;
+    width: 100%;
+}
+
+.order_table thead {}
+
+.order_table thead tr {}
+
+.order_table thead th {
+    background: #ededed;
+    color: #333;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.order_table thead th:nth-of-type(1) {
+    width: 2%;
+}
+
+.order_table thead th:nth-of-type(2) {
+    width: 32%;
+}
+
+.order_table thead th:nth-of-type(3) {
+    width: 40%;
+}
+
+.order_table thead th:nth-of-type(4) {
+    width: 25%;
+}
+
+.order_table tbody {}
+
+.order_table tbody tr {}
+
+.order_table tbody td {
+    border-bottom: double;
+    border-color: #ededed;
+    padding: 12px;
+    text-align: left;
+}
+
+.order_table tbody td img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.order_table tbody td a {
+    font-size: 15px;
+    padding-left: 10px;
+    color: #333;
+    white-space: pre-line;
+}
+order_table tbody td a small{
+    color:#666;
+}
+
+.order_table tbody td p {
+    font-size: 15px;
+}
+
+.order_table tbody td p input {
+    border: 1px solid #ededed;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.order_table tbody td:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_table tbody td:nth-of-type(3) {
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+.order_table tbody td:nth-of-type(4){
+    text-align: center;
+}
+
+.order_list > p {
+    margin-top:5px;
+    text-align: right;
+}
+
+.order_list p select {
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.sel select option {}
+
+.paging{
+    text-align: center;
+    margin-top:40px;
+}
+.paging a{
+    font-size:15px;
+    margin:15px;
+}
+@media (max-width:992px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1178px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}

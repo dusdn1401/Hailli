@@ -1,0 +1,117 @@
+@import url('common.css');
+
+
+
+/*=========================================*/
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 150px;
+}
+
+.banner h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+/*===================================*/
+.main {
+    width: 60%;
+    margin: 80px auto;
+}
+
+.main .m1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 20vw;
+}
+
+.main .m1 img {
+    width: 45%;
+}
+
+.main .m1 article {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 55px;
+    text-align: left;
+
+}
+
+.main .m1 article h2 {
+    white-space: pre-line; font-size: 2em;
+}
+
+.main .m1 article h2 small {
+font-size: 0.7em;
+}
+
+.main .m1 article p {
+    padding-top: 15px;
+    line-height: 25px;
+    white-space: pre-line;
+      font-size: 18px;
+
+}
+
+.main .m2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 20vw;
+}
+
+.main .m2 p {
+    width: 50%;
+    text-align: right;
+    white-space: pre-line;
+    line-height: 25px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    padding-right: 55px;
+    font-size: 18px;
+}
+
+.main .m2 img {
+    width: 45%;
+}
+
+.main .m3 {
+    display: flex;
+    justify-content: center;
+    height: 20vw;
+}
+
+.main .m3 img {
+    width: 45%;
+    height: 100%;
+
+}
+
+.main .m3 p {
+    width: 50%;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 30px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+      font-size: 18px;
+}
+
+
+
+/*========================================*/

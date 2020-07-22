@@ -1,0 +1,105 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+    height: 700px;
+}
+
+.member {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    background: #ededed;
+    padding: 50px 0px;
+    text-align: right;
+    width: 20%;
+}
+
+.menu h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+
+.menu ul {}
+
+.menu ul li {}
+
+.menu ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 10px;
+    position: relative;
+    color: #666;
+    transition: .7s;
+}
+
+.menu ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.menu ul li:hover a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+}
+
+.order {
+    margin: 40px auto;
+    padding: 0 50px;
+    width:80%;
+}
+
+.order h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.order_list {
+    text-align: center;
+}
+.order_list p{
+    margin-top:100px;
+    color:#666;
+    font-size:18px;
+}
+
+.order_list a{
+    background:#AD74CE;
+    padding:10px 70px;
+    border-radius: 10px;
+    display:inline-block;
+    margin:40px auto;
+    color:#fff;
+    transition:.5s;
+}
+.order_list a:hover{
+    background:#8953A8;
+}
+
+@media (max-width:992px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1178px) {
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 25%;
+        margin-left: 0%;
+    }
+}

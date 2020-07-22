@@ -1,0 +1,110 @@
+@import url(common.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+    height: 700px;
+}
+
+.member {}
+
+
+.qna {
+    margin: 0 auto;
+    padding: 0 50px;
+    width:80%;
+    height:100%;
+}
+
+.qna h2 {
+    font-size: 25px;
+    padding-top:40px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.qna_list {
+    text-align: right;
+}
+
+.qna_table {
+    border-spacing: 0;
+    border-radius: 10px;
+    margin-top:5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.qna_table thead {
+    text-align: center;
+    background: #ededed;
+}
+
+.qna_table thead tr {}
+
+.qna_table thead th { 
+    color: #333;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.qna_table thead th:nth-of-type(1) {
+    width: 10%;
+}
+
+.qna_table thead th:nth-of-type(2) {
+    width: 45%;
+}
+
+.qna_table thead th:nth-of-type(3) {
+    width: 10%;
+}
+
+.qna_table thead th:nth-of-type(4) {
+    width: 15%;
+}
+
+.qna_table tbody {}
+
+.qna_table tbody tr {}
+
+.qna_table tbody td {
+    border-bottom: double;
+    border-color: #ededed;
+    padding: 12px;
+    text-align: left;
+    text-align: center;
+}
+
+
+.qna_table tbody td a {
+    font-size: 15px;
+    color: #333;
+}
+
+.qna_table tbody td p {
+    font-size: 15px;
+}
+
+.qna_table tbody td:nth-of-type(2){
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.qna_list > a{
+    text-align: right;
+    padding:10px 60px;
+    border-radius: 10px;
+    color:#fff;
+    background:#AD74CE;
+    display: inline-block;
+}
+
+
+.paging{
+    text-align: center;
+    margin-top:40px;
+}
+.paging a{
+    font-size:15px;
+    margin:15px;
+}

@@ -1,0 +1,189 @@
+@import url('common.css');
+
+
+
+.all{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.all > .all-m{}
+.all-m{
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 20px;
+    
+    text-align: center;
+    line-height: 2;
+}
+.all-m > p{
+    font-size: 18px;
+    padding: 10px;
+}
+.all-m > hr{
+    width: 300px;
+}
+
+.all-m > a{
+    font-size: 15px;
+}
+
+/*==================================*/
+
+
+/**********배너**********/
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p {
+    background: white;
+    padding: 3%;
+    font-size: 25px;
+    color: #333333;
+}
+
+
+/**********글 내용**********/
+.table {
+    width: 1080px;
+    margin: 3% auto;
+    font-size: 15px;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table hr {
+    width: 100%;
+}
+
+/*제목라인*/
+.table tr {
+    line-height: 3;
+    font-size: 15px;
+    color: #333333;
+}
+
+.table table tr th {
+    width: 100%;
+}
+
+.table table tr td {
+    width: 100%;
+}
+
+
+/*내용*/
+.table table tr {}
+
+.table table tr:nth-of-type(1) {}
+
+.table table tr:nth-of-type(2) {}
+
+.table table tr:nth-of-type(3) {}
+
+.table table tr:nth-of-type(4) {}
+
+.table table tr:nth-of-type(5) {}
+
+
+.table table tr:nth-of-type(2) td input {
+    width: 100%;
+}
+
+.table table tr:nth-of-type(4) td textarea {
+    width: 100%;
+    background-color: #ededed;
+    border: none;
+    height: 500px;
+    
+    line-height: 1.6;
+}
+
+.table table tr:nth-of-type(4) td hr {
+    width: 100%;
+}
+
+
+.table table tr th {
+    margin: 4%;
+}
+
+/**********완료 버튼**********/
+.button {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 3% 0;
+    width: 1080px;
+}
+
+.button a {
+    width: 150px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.button a:nth-of-type(1) {
+    font-size: 15px;
+    color: #333333;
+    line-height: 2;
+
+    border: 1px solid #ededed;
+    background: #ededed;
+    border-radius: 10px;
+
+}
+
+.button a:nth-of-type(2) {
+
+    font-size: 15px;
+    color: #fcfbe3;
+    line-height: 2;
+
+    border: 1px solid #ad74ce;
+    background: #ad74ce;
+    border-radius: 10px;
+}
+
+
+
+
+/**********페이지 버튼**********/
+/*
+.paging{
+    text-align: center;
+    margin: 3% 0;
+}
+.paging a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    padding: 1%;
+}
+
+.paging a:hover:after,
+.paging a.active:after{
+    content: '';
+    border: 1px solid #777777;
+    width: 100%;
+    display: block;
+    color: red;
+}
+*/
+
+
