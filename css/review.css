@@ -2,45 +2,6 @@
 
 
 /**********버거**********/
-.menu-trigger {
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    transition: .5s;
-    right: 5vw;
-    top: 5vw;
-    display: none;
-}
-
-.menu-trigger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ad74ce;
-}
-
-.menu-trigger .active span {
-    background: lightskyblue;
-}
-
-.munu-trigger .active {
-    transform: rotate(90deg);
-}
-
-.menu-trigger span:nth-of-type(1) {
-    top: 0;
-}
-
-.menu-trigger span:nth-of-type(2) {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.menu-trigger span:nth-of-type(3) {
-    bottom: 0%;
-}
 
 
 /**********배너**********/
@@ -224,104 +185,95 @@
 /*---------모바일 480----------*/
 
 
-@media (max-width:480px) {
+   
+@media (max-width:720px) {
+
     header {
-
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    header .hailli {}
+    header .top {
+        width: 100%;
+        margin: 0 auto;
 
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 10px;
     }
 
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-
-        display: flex;
+    header .top h1 {
+        text-align: center;
+        justify-content: center;
         align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
+        display: flex;
     }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
+    }
+
 
     header nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
+    header nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
         width: 30%;
 
-        display: block;
-        text-align: center
-    }
+        background: rgba(0, 0, 0, 0.6);
 
-    header .hailli nav a {
-        top: 10%;
-
-        font-size: 12px;
-        color: #fff;
-        display: block;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-    }
-
-    slide {
-        width: 100%;
-    }
-
-    .banner {
-
-        background: url(../img/116.jpg) no-repeat 20% 50%;
-        background-size: cover;
-        width: 100%;
-        height: 20vw;
-        /*
-        width: 50%;
-        height: 50%;
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
+        display:block;
         align-items: center;
-*/
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
     }
 
+
+    header nav a {
+        top: 25%;
+        font-size: 15px;
+        display: block;
+        padding-bottom: 30px;
+
+    }
+
+    .banner img {height: 100px;}
+    
     .banner h2 {
-        font-size: 20px;
-        /*
-        position: absolute;
-        left: 0; top: 0;
-        transform: translate(-50%, -50%);
-        color: #333333;
-*/
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+    
+    
+    footer > ul li a {
+        padding: 0px;
     }
+    
 
-    .banner img {
-        display: none;
-    }
-
+    
+   
     main {
         width: 100%;
     }
@@ -332,7 +284,7 @@
 
     .list {
         width: 100%;
-
+        display: inline-block;
     }
 
     .best .list h2 {
@@ -340,24 +292,43 @@
         font-size: 15px;
     }
 
-    .list ul li figure {
-        width: 100%;
-        height: auto;
+    .list ul {}
 
+    .list ul li {
+        width: 90%;
+/*        justify-content: space-between;*/
+        margin: 0 auto;
+/*        flex-wrap: wrap;*/
+    }
+
+    .list ul li figure {
+        height: auto;
+        opacity: 1;
+        
     }
 
     .list ul li figure img {
-        width: 40%;
-        height: 30vw;
+        width: 100%;
+        height: 80vw;
+        
     }
 
     .list ul li a figure figcaption {
+        color: black;
+        position: static;
+        width: 100%;
         opacity: 1;
+        white-space: normal;
+        background: none;
+        font-size: 12px;
+        padding: 3%;
     }
 
-    .list ul li a figure figcaption h3 {}
-
-    .list ul li a figure figcaption div {}
+    .list ul li a figure figcaption h3 {
+        font-size: 15px;
+        padding: 3%;
+        
+    }
 
     .normal {
         width: 100%;
@@ -371,16 +342,23 @@
     }
 
     .list2 ul {
+        width: 90%;
         display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
 
-    .list2 ul li {}
+    .list2 ul li {
+        width: 48%;
+    }
 
     .list2 ul li a {}
 
     .list2 ul li a figure {
         width: 100%;
         height: auto;
+        
     }
 
     .list2 ul li a figure img {
@@ -389,15 +367,13 @@
     }
 
     .button {
-        width: 100%;
+        width: 90%;
         height: 20vw;
     }
 
     .button a {
+        width: 20%;
         font-size: 10px;
     }
 
-    .h_f p {
-        font-size: 14px;
-    }
 }

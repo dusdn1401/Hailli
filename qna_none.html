@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,13 +13,13 @@
 
     <link rel="stylesheet" href="css/qna_none.css" type="text/css">
 
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 
 </head>
 
 <body>
 
-      <header>
+    <header>
         <div class="top">
             <h1> <a href="index.html">〈 HAILLI 〉</a> </h1>
             <div class="gnb">
@@ -27,24 +28,40 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
 
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
 
-    <main>            
-            <div class="qna">
-                <h2>1 : 1 문의</h2>
-                <div class="content">
-                   <p>아직 문의하신 내역이 없어요.</p>
-                    <a href="qna_write.html">문의하기</a>
-                </div>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
+
+    <main>
+        <div class="qna">
+            <h2>1 : 1 문의</h2>
+            <div class="content">
+                <p>아직 문의하신 내역이 없어요.</p>
+                <a href="qna_write.html">문의하기</a>
             </div>
+        </div>
     </main>
 
     <footer>
@@ -64,5 +81,7 @@
             </li>
         </ul>
     </footer>
-    
-</body></html>
+
+</body>
+
+</html>

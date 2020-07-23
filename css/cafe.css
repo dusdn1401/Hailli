@@ -6,12 +6,14 @@
 
 .banner {
     position: relative;
-    width: 100%; height: 150px; margin: 0 auto; 
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
 }
 
 .banner img {
     width: 100%;
-    height: 100%;
+    height: 160px;
 }
 
 .banner h2 {
@@ -118,36 +120,119 @@
 
 /*========================================*/
 
+
+
 @media (max-width:720px) {
 
-    .main {
-        width: 80%;
-        margin: 80px auto;
-        
+    header {
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .top {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    header .top h1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
     }
 
 
-    .main .m1 {
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 30%;
+
+        background: rgba(0, 0, 0, 0.6);
+
         display: block;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
+    }
+
+
+    header nav a {
+        top: 25%;
+        font-size: 15px;
+        display: block;
+        padding-bottom: 30px;
+
+    }
+
+    .banner img {
+        height: 100px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+    }
+
+
+    footer > ul li a {
+        padding: 0px;
+    }
+
+    .main {
+        width: 100%;
+        margin: 10% auto;
+        text-align: center;
         justify-content: center;
-        margin-bottom: 20px;
+        display: block;
+    }
+
+    .main .m1 {
+        width: 100%;
         height: auto;
+        display: block;
     }
 
     .main .m1 img {
         width: 100%;
+        height: 90vw;
     }
 
     .main .m1 article {
         width: 100%;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
         text-align: center;
-        align-items: center
-
+        align-items: center;
+        padding: 0;
     }
 
     .main .m1 article h2 {
@@ -156,64 +241,66 @@
     }
 
     .main .m1 article h2 small {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .main .m1 article p {
-
         line-height: 2;
-        white-space: pre-line;
-        font-size: 15px;
-    
-
+        white-space: normal;
+        font-size: 14px;
     }
 
     .main .m2 {
+        width: 100%;
+        height: auto;
         display: block;
-        justify-content: center;
-        margin-bottom: 20px;
     }
 
     .main .m2 p {
         width: 100%;
-        text-align: center;
-        white-space: pre-line;
         line-height: 2;
-        justify-content: center;
-        display: flex;
+        white-space: pre-line;
+        font-size: 14px;
+        padding: 0;
+
+        text-align: center;
         align-items: center;
-        padding: 0px;
-        font-size: 15px;
+        justify-content: center;
+
     }
 
     .main .m2 img {
         width: 100%;
+        height: 90vw;
     }
 
+
     .main .m3 {
+        width: 100%;
+        height: auto;
         display: block;
-        justify-content: center;
+        align-items: center;
     }
 
     .main .m3 img {
         width: 100%;
-        height: 100%;
-
+        height: 90vw;
     }
 
     .main .m3 p {
         width: 100%;
-        text-align: center;
-        white-space: pre-line;
         line-height: 2;
-        justify-content: center;
-        display: flex;
+        white-space: pre-line;
+        font-size: 14px;
+        padding: 0;
+
+        text-align: center;
         align-items: center;
-        padding: 0px;
-        font-size: 15px;
+        justify-content: center;
     }
-    
- 
+
+
+
 
 
 }

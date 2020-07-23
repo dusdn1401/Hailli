@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,14 +13,14 @@
 
     <link rel="stylesheet" href="css/qna_write_save.css" type="text/css">
 
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 
 </head>
 
 <body>
 
     <header>
-       <div class="top">
+        <div class="top">
             <h1> <a href="index.html">〈 HAILLI 〉</a> </h1>
             <div class="gnb">
                 <a href="login.html"> 로그인 </a>
@@ -27,14 +28,34 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
+
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
+
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
+
+
+
 
     <main>
         <div class="qna_write">
@@ -55,7 +76,7 @@
                         </ul>
                     </form>
                 </div>
-                
+
                 <div class="data">
                     <p>문의내용</p>
                     <form action="">
@@ -83,7 +104,7 @@
                 <a href="qna_write_save.html">등록</a>
             </p>
         </div>
-        
+
         <div class="reyer">
             <div class="popup">
                 <p>
@@ -96,7 +117,7 @@
         </div>
     </main>
 
-   <footer>
+    <footer>
         <ul>
             <li>
                 <p>업체명 : 하일리
@@ -113,4 +134,6 @@
             </li>
         </ul>
     </footer>
-</body></html>
+</body>
+
+</html>

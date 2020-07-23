@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/id_find.css" type="text/css">
 
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 
 </head>
 
@@ -27,16 +27,34 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
 
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
 
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
+    
+    
+    
     <main>
         <div class="id_find">
             <form>

@@ -26,7 +26,7 @@ p {
 a {
     text-decoration: none;
     color: #555;
-    font-size: 20px;
+    /* font-size: 20px;*/
 }
 
 * {
@@ -81,27 +81,29 @@ header nav {
     width: 100%;
     height: 6vh;
     background: #333;
-    font-size: 20px;
-    word-spacing: 150px;
     align-items: center;
-
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-header nav div {
+/*header nav div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     text-align: center;
     width: 60%;
     height: 100%;
     margin: 0 auto;
-}
+}*/
 
 header nav a {
     color: #fff;
     position: relative;
     text-decoration: none;
-
+    font-size: 20px;
+    word-spacing: 150px;
 
 }
 
@@ -132,7 +134,7 @@ header nav a:hover:after {
     position: fixed;
     top: 80px;
     right: 7vw;
-   /* display: none;*/
+    display: none;
     transition: .5s;
 }
 
@@ -180,7 +182,6 @@ footer > ul {
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    height: 160px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -201,7 +202,7 @@ footer > ul li:nth-of-type(2) a {
 
 
 
-@media (max-width:720px) {
+/*@media (max-width:720px) {
 
     header {
         display: flex;
@@ -260,12 +261,12 @@ footer > ul li:nth-of-type(2) a {
         transform: translateX(100%);
         transition: .5s;
         z-index: 5;
-        width: 40%;
+        width: 100%;
 
     }
 
 
-    header nav a {
+    header nav div a {
         padding: 30px;
         font-size: 20px;
         color: white;
@@ -276,7 +277,7 @@ footer > ul li:nth-of-type(2) a {
         text-align: left;
         width: 100%;
 
-        /*       background: deeppink;*/
+
     }
 
     header nav a:after {
@@ -316,7 +317,6 @@ footer > ul li:nth-of-type(2) a {
         display: inline-block;
     }
 
-    /*    footer > ul li {align-items: flex-start}*/
     footer > ul {
     display: flex;
     justify-content: space-between;
@@ -382,11 +382,186 @@ footer > ul li:nth-of-type(2) a {
     }
 
 
+}*/
+
+
+/*@media (max-width:720px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .top {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    header .top h1 {
+        height: 160px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
+    }
+
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header nav {
+        top: 25%;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 30%;
+
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
+    }
+
+
+    header nav a {
+        top: 10%;
+        font-size: 12px;
+        display: block;
+        word-spacing: 10px;
+
+    }
+
+    footer > ul li a {
+        padding: 0px;
+    }
 }
+*/
+
+
+@media (max-width:480px) {
+
+    header {
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .top {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    header .top h1 {
+        padding-top: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
+    }
+
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 30%;
+
+        background: rgba(0, 0, 0, 0.6);
+
+        display: block;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
+    }
+
+
+    header nav a {
+        top: 25%;
+        font-size: 15px;
+        display: block;
+        padding-bottom: 30px;
+
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+
+
+    .banner img {
+        height: 100px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+    }
+
+
+    footer > ul li a {
+        padding: 0px;
+    }
 
 
 
 
+}
 
 
 

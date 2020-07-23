@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,7 +13,7 @@
 
     <link rel="stylesheet" href="css/order.css" type="text/css">
 
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 
 </head>
 
@@ -27,15 +28,33 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
 
+
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
+
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
+
 
     <main>
         <div class="member">
@@ -57,9 +76,9 @@
             <div class="order">
                 <h2>주문내역</h2>
                 <div class="order_list">
-                  <span>
-                      총 1건
-                  </span>
+                    <span>
+                        총 1건
+                    </span>
                     <table class="order_table">
 
                         <thead>
@@ -92,13 +111,13 @@
                         </tbody>
                     </table>
 
-                       <p> <select name="more" id="">
+                    <p> <select name="more" id="">
                             <option value="">전체내역 보기</option>
                             <option value="">최신순</option>
                             <option value="">
                                 이름순
                             </option>
-                    </select>
+                        </select>
                     </p>
                     <div class="paging">
                         <a href="">&lt</a>
@@ -106,8 +125,8 @@
                         <a href="">2</a>
                         <a href="">3</a>
                         <a href="">&gt</a>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -131,4 +150,6 @@
             </li>
         </ul>
     </footer>
-</body></html>
+</body>
+
+</html>

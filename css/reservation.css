@@ -2,6 +2,7 @@
 
 
 /**********버거**********/
+/*
 .menu-trigger {
     width: 20px;
     height: 20px;
@@ -41,6 +42,7 @@
 .menu-trigger span:nth-of-type(3) {
     bottom: 0%;
 }
+*/
 
 
 
@@ -49,7 +51,9 @@
 
 .banner {
     position: relative;
-    width: 100%; height: 150px; margin: 0 auto; 
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
 }
 
 .banner img {
@@ -291,106 +295,83 @@ tfoot tr:nth-of-type(3) {
 
 /*---------모바일 480----------*/
 
+@media (max-width:720px) {
 
-@media (max-width:480px) {
     header {
-
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    header .hailli {}
+    header .top {
+        width: 100%;
+        margin: 0 auto;
 
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 10px;
     }
 
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-
-        display: flex;
+    header .top h1 {
+        text-align: center;
+        justify-content: center;
         align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
+        display: flex;
     }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
+    }
+
 
     header nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
+    header nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
         width: 30%;
 
+        background: rgba(0, 0, 0, 0.6);
+
         display: block;
-        text-align: center
-    }
-
-    header .hailli nav a {
-        top: 10%;
-
-        font-size: 12px;
-        color: #fff;
-        display: block;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-    }
-
-    slide {
-        width: 100%;
-    }
-
-    .banner {
-
-        background: url(../img/116.jpg) no-repeat 20% 50%;
-        background-size: cover;
-        width: 100%;
-        height: 20vw;
-        /*
-        width: 50%;
-        height: 50%;
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
         align-items: center;
-*/
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
     }
 
-    .banner h2 {
-        font-size: 20px;
-        /*
-        position: absolute;
-        left: 0; top: 0;
-        transform: translate(-50%, -50%);
-        color: #333333;
-*/
+
+    header nav a {
+        top: 25%;
+        font-size: 15px;
+        display: block;
+        padding-bottom: 30px;
+
     }
 
-    .banner img {
-        display: none;
+    footer > ul li a {
+        padding: 0px;
     }
 
-    main {width: 100%;}
+    main {
+        width: 100%;
+    }
 
     .re {
         height: auto;
@@ -425,7 +406,7 @@ tfoot tr:nth-of-type(3) {
     }
 
     .tab-head div.active {
-/*        display: block;*/
+        /*        display: block;*/
     }
 
     table {
@@ -436,12 +417,43 @@ tfoot tr:nth-of-type(3) {
     table tbody {
         width: 100%;
     }
-    tbody tr{
+
+    tbody tr {
+        width: 100%;
+        font-size: 11px;
+
+    }
+
+    tbody tr th {
+        text-align: center;
+    }
+
+    tbody tr td {
+        text-align: start;
+    }
+
+    table tbody tr:nth-of-type(1) {}
+
+    table tbody tr:nth-of-type(1) th {
+        width: 20%;
+    }
+
+    table tbody tr:nth-of-type(1) td {
+        width: 80%;
+    }
+
+    table tfoot {
         width: 100%;
     }
-    .table tbody th:nth-of-type(1){
-        width: 30%;
+
+    table tfoot tr {
+        font-size: 10px;
     }
+
+    table tfoot tr:nth-of-type(3) {
+        font-size: 15px;
+    }
+
 
     .but {
         width: auto;
@@ -471,13 +483,6 @@ tfoot tr:nth-of-type(3) {
         width: 100%;
     }
 
-    .footer {}
 
-    .h_f {}
 
-    .h_f p {
-        font-size: 14px;
-    }
-
-    .h_f div {}
 }

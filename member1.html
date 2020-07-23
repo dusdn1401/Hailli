@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,13 +13,13 @@
 
     <link rel="stylesheet" href="css/member1.css" type="text/css">
 
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 
 </head>
 
 <body>
 
-     <header>
+    <header>
         <div class="top">
             <h1> <a href="index.html">〈 HAILLI 〉</a> </h1>
             <div class="gnb">
@@ -27,22 +28,42 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
 
+
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
+
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
+
+
+
     <main>
         <div class="member">
             <div class="menu">
                 <h1>MY 페이지</h1>
                 <ul>
                     <li>
-                        <a  class="active" href="member1.html">회원정보</a>
+                        <a class="active" href="member1.html">회원정보</a>
                     </li>
                     <li>
                         <a href="cart_none.html">장바구니</a>
@@ -52,11 +73,11 @@
                     </li>
                 </ul>
             </div>
-            
-            
-<!--회원정보-->
+
+
+            <!--회원정보-->
             <div class="info">
-               <h2>회원정보</h2>
+                <h2>회원정보</h2>
                 <form action="">
                     <div class="edit">
                         <ul>
@@ -107,9 +128,9 @@
         </div>
     </main>
 
-   
-   
-   
+
+
+
     <footer>
         <ul>
             <li>
@@ -127,5 +148,7 @@
             </li>
         </ul>
     </footer>
-    
-</body></html>
+
+</body>
+
+</html>

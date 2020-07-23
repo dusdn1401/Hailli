@@ -6,7 +6,7 @@
     <title>Cafe__HAILLI</title>
     <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
     <link href="css/review-br1.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 </head>
 
 
@@ -22,25 +22,39 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a> </div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
-    <!-----헤더 끝----->
 
-    <slide>
-        <div class="banner">
-            <p>이용후기</p>
-        </div>
-    </slide>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
 
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
 
 
     <main>
+
+        <div class="banner">
+            <img src="img/2-1.jpg" alt="">
+            <h2> 이용후기</h2>
+        </div>
+
         <!-----후기내용 시작----->
         <div class="table">
             <table>
@@ -92,7 +106,8 @@
 
                             앞으로 양가 행사에도 여기서 케이크 해야할까봐요~
                             <img src="img/cake's/4.jpg">
-                            <hr><hr>
+                            <hr>
+                            <hr>
                         </td>
 
                     </tr>
@@ -140,7 +155,8 @@
                             여자님의 특별하고 소중한 날 더욱 빛나게 하일리가 노력하겠습니다.
                             다시한번 정성스러운 후기 감사합니다 :-)
 
-                            <hr><hr>
+                            <hr>
+                            <hr>
                         </td>
 
                     </tr>

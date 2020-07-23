@@ -6,7 +6,7 @@
     <title>Cafe__HAILLI</title>
     <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
     <link href="css/review-br3.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 </head>
 
 
@@ -22,25 +22,39 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
-    <!-----헤더 끝----->
 
-    <slide>
-        <div class="banner">
-            <p>이용후기</p>
-        </div>
-    </slide>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
 
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
 
 
     <main>
+
+        <div class="banner">
+            <img src="img/2-1.jpg" alt="">
+            <h2> 이용후기</h2>
+        </div>
+
         <!-----후기내용 시작----->
         <div class="table">
             <table>
@@ -78,17 +92,18 @@
                             제가 너무 평소 기념일에 여자친구한테 받기만해서 이번 기회에 나도 뭔가를 해보자!! 라고
                             생각을 해서 여기저기 찾아보다가
                             후기도 좋고 주변 사람이 추천해줘서 하일리에서 해야겠다 생각을 했습니다.
-                            
+
                             케이크와 선물을 받던 여자친구 얼굴이 안잊혀지네요ㅠㅠ
                             그동안 제가 잘 못해줬나 싶기도하고, 이런 제가 뭐가 이쁘다고 결혼생각을 한건지 싶어
                             더 잘해줘야겠다 내가 더 사랑해줘야지 하는 생각이듭니다.
-                            
+
                             여자친구거 디저트류 좋아하는데 나중에 하일리에 같이 가서 케이크 먹어야겠어요~
                             너무 좋아할거같아요.
-                            
+
                             저희 커플에게 좋은 추억 만들어줘서 고맙습니다.
                             <img src="img/cake's/25.jpg">
-                            <hr><hr>
+                            <hr>
+                            <hr>
                         </td>
 
                     </tr>
@@ -131,13 +146,14 @@
                             올려주신 사진에서 예랑님의 마음이 느껴지네요~
                             덛불어 맛있게 드셨다고 해주시고 좋은 추억을 만드신거같이서 너무 기쁩니다~^^
                             저희 하일리카페에 직접 오시면
-                            온라인에선 판매하지 않는 쿠키류나 조각 케이크 등 다양한 디저트류가 있으니 
+                            온라인에선 판매하지 않는 쿠키류나 조각 케이크 등 다양한 디저트류가 있으니
                             나중에 여자친구 분이랑 같이 오시면 좋을것같습니다~
                             좀 더 원하는 디자인이 있으신경우 전화도 가능하니 추후 이용해주실때 참고해주시면 될것같습니다.
                             예랑님의 특별하고 소중한 날 더욱 빛나게 하일리가 노력하겠습니다.
                             다시한번 정성스러운 후기 감사합니다 :-)
-                            
-                            <hr><hr>
+
+                            <hr>
+                            <hr>
                         </td>
                     </tr>
                 </tbody>
@@ -175,4 +191,6 @@
         </ul>
     </footer>
     <!-----풋바 끝----->
-</body></html>
+</body>
+
+</html>

@@ -6,15 +6,13 @@
     <title>Cafe__HAILLI</title>
     <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
     <link href="css/write.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="img/fa.png">
+    <link rel="icon" href="img/fa.jpg">
 </head>
 
 
 <body>
 
-
-    <!-----헤더고정----->
-     <header>
+    <header>
         <div class="top">
             <h1> <a href="index.html">〈 HAILLI 〉</a> </h1>
             <div class="gnb">
@@ -23,26 +21,33 @@
                 <a href="qna_none.html"> 1:1 문의 </a> </div>
         </div>
         <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
+            <a href="cafe.html"> 카페소개 </a>
+            <a href="reservation.html"> 예약하기 </a>
+            <a href="review.html"> 이용후기 </a>
+            <a href="notice.html"> 공지사항 </a>
+            <a href="road.html"> 오시는길 </a>
         </nav>
 
+
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        
     </header>
-    
-    <!-----헤더 끝----->
 
-    <!--
-    <slide>
-        <div class="banner">
-            <p>이용후기</p>
-        </div>
-    </slide>
--->
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
 
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+    </script>
 
 
     <main>

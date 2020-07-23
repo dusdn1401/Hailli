@@ -2,21 +2,6 @@
 
 
 /**********배너**********/
-.banner {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner p {
-    background: white;
-    padding: 3%;
-    font-size: 25px;
-    color: #333333;
-}
-
 
 /**********글 내용**********/
 .table {
@@ -151,3 +136,86 @@
 */
 
 
+/*========================*/
+
+
+@media (max-width:720px) {
+
+    header {
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .top {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    header .top h1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header .top h1 a {
+        font-size: 50px;
+        color: #333;
+    }
+
+    header .top .gnb {
+        position: absolute;
+        right: 10%;
+        top: 10px;
+    }
+
+    header .gnb a {
+        padding: 5px;
+
+    }
+
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 30%;
+
+        background: rgba(0, 0, 0, 0.6);
+
+        display: block;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+        text-align: center;
+
+
+    }
+
+
+    header nav a {
+        top: 25%;
+        font-size: 15px;
+        display: block;
+        padding-bottom: 30px;
+
+    }
+
+    footer > ul li a {
+        padding: 0px;
+    }
+
+    .main {
+        width: 80%;
+        margin: 80px auto;
+
+    }
+}
