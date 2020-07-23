@@ -75,8 +75,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    flex-wrap: wrap;
-    order: 1;
+
 }
 
 .main .m2 p {
@@ -89,7 +88,6 @@
     align-items: center;
     padding-right: 55px;
     font-size: 18px;
-    order: 2;
 }
 
 .main .m2 img {
@@ -257,6 +255,8 @@
         width: 100%;
         height: auto;
         display: block;
+        flex-wrap: wrap;
+        order: 1;
     }
 
     .main .m2 p {
@@ -269,6 +269,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+        order: 2;
 
     }
 
