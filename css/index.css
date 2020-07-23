@@ -368,7 +368,6 @@
 
 
 
-/*
 @media (max-width:720px) {
 
     header {
@@ -408,6 +407,7 @@
 
     header .gnb a {
         padding: 5px;
+        
     }
 
 
@@ -422,12 +422,12 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.8);
 
-        display: flex;
-        align-items: flex-start;
+        display: block;
+        align-items: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 5;
-        width: 40%;
+        width: 50%;
 
     }
 
@@ -536,4 +536,3 @@
 
 
 }
-*/

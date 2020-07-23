@@ -46,29 +46,25 @@
 
 /**********배너**********/
 .banner {
+    position: relative;
     width: 100%;
     height: 150px;
-    position: relative;
     margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.banner h2 {
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    color: #333333;
 }
 
 .banner img {
     width: 100%;
+    height: 100%;
 }
+
+.banner h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
 
 
 /**********공지리스트**********/
@@ -308,10 +304,11 @@
     }
 
     .button {
-        width:100%;
+        width: 100%;
         height: 20vw;
     }
-    .button a{
+
+    .button a {
         font-size: 10px;
     }
 
@@ -338,5 +335,8 @@
     .table table tbody th {
         font-size: 10px;
     }
-    .h_f p{font-size: 14px;}
+
+    .h_f p {
+        font-size: 14px;
+    }
 }
