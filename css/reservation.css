@@ -1,7 +1,8 @@
 @import url('common.css');
 
-
 /**********버거**********/
+
+
 /*
 .menu-trigger {
     width: 20px;
@@ -45,9 +46,7 @@
 */
 
 
-
 /**********배너**********/
-
 
 .banner {
     position: relative;
@@ -58,7 +57,7 @@
 
 .banner img {
     width: 100%;
-    height: 100%;
+    height: 160px;
 }
 
 .banner h2 {
@@ -70,13 +69,12 @@
 }
 
 
-
 /**********본문 예약하기**********/
+
 .re {
     width: 1080px;
     height: 600px;
     margin: 0 auto;
-
     overflow: hidden;
 }
 
@@ -123,11 +121,12 @@
     display: block;
 }
 
+
 /*예약선택*/
+
 table {
     color: #333333;
     font-size: 15px;
-
     float: right;
     margin-top: 20px;
 }
@@ -139,6 +138,7 @@ tbody tr {}
 tbody tr th {
     text-align: right;
     line-height: 1;
+    width: 30%;
 }
 
 tbody tr td {
@@ -162,11 +162,11 @@ tbody tr td select {
 
 tbody tr td textarea {
     width: auto;
+    height: 100%;
     padding: 5px;
     background: #ededed;
     border-radius: 10px;
     border: none;
-
 }
 
 tbody tr:nth-of-type(1) {}
@@ -179,7 +179,7 @@ tbody tr:nth-of-type(4) {}
 
 tbody tr:nth-of-type(5) {}
 
-tbody tr:nth-of-type(6) {}
+tbody tr:nth-of-type(6) td {}
 
 tbody tr:nth-of-type(7) th small {
     float: none;
@@ -189,16 +189,16 @@ tbody tr:nth-of-type(7) th small {
 tbody tr:nth-of-type(8) {}
 
 
-
 /*금액*/
+
 tfoot {
     width: 100%;
-    overflow: hidden;
     margin: 0 auto;
 }
 
 tfoot tr {
     text-align: center;
+    padding: 30px;
 }
 
 tfoot tr th {
@@ -207,6 +207,8 @@ tfoot tr th {
 
 tfoot tr td {
     text-align: right;
+    font-size: 20px;
+    padding: 10px
 }
 
 tfoot tr:nth-of-type(1) {}
@@ -217,20 +219,21 @@ tfoot tr:nth-of-type(3) {
     font-size: 20px;
 }
 
+
 /**********버튼**********/
+
 .but {
     width: 1080px;
-    margin: 0 auto;
     overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .button {
     float: right;
-
     text-align: center;
     justify-content: center;
     align-content: center;
-
 }
 
 .button a {
@@ -239,51 +242,52 @@ tfoot tr:nth-of-type(3) {
     display: inline-block;
     margin: 20px 5px;
     padding: 1.5% 0;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
+
 
 /*장바구니*/
-.button a:nth-of-type(1) {
-    font-size: 15px;
-    color: #333333;
-    line-height: 2;
 
+.button a:nth-of-type(1) {
+    color: #333333;
     border: 1px solid #ededed;
     background: #ededed;
-    border-radius: 10px;
-
 }
+
 
 /*예약하기*/
+
 .button a:nth-of-type(2) {
-
-    font-size: 15px;
     color: #fcfbe3;
-    line-height: 2;
-
     border: 1px solid #ad74ce;
     background: #ad74ce;
-    border-radius: 10px;
 }
 
+
 /**********상세설명**********/
+
 .list {
     width: 1080px;
     margin: 0 auto;
+}
 
+.list header {
+    background: #fcfbe3;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.list header {
-    background: #fcfbe3;
-    border-radius: 10px;
-}
-
 .list header p {
     color: #333333;
-    font-size: 20px;
+    font-size: 30px;
     padding: 12px 0;
+    text-align: center;
 }
 
 .list img {
@@ -292,197 +296,108 @@ tfoot tr:nth-of-type(3) {
 }
 
 
-
 /*---------모바일 480----------*/
 
 @media (max-width:720px) {
-
-    header {
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header .top {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    header .top h1 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-
-    header .top h1 a {
-        font-size: 50px;
-        color: #333;
-    }
-
-    header .top .gnb {
-        position: absolute;
-        right: 10%;
-        top: 10px;
-    }
-
-    header .gnb a {
-        padding: 5px;
-
-    }
-
-
-    header nav.active {
-        transform: translateX(0%);
-    }
-
-    header nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-
-        background: rgba(0, 0, 0, 0.6);
-
-        display: block;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-        text-align: center;
-
-
-    }
-
-
-    header nav a {
-        top: 25%;
-        font-size: 15px;
-        display: block;
-        padding-bottom: 30px;
-
-    }
-
-    footer > ul li a {
-        padding: 0px;
-    }
-
     main {
         width: 100%;
     }
-
     .re {
         height: auto;
         width: 100%;
         overflow: none;
     }
-
     .re .tab {
         float: none;
         width: 100%;
     }
-
     .re .tab .tab-head {
         width: 100%;
-
     }
-
     .tab-head div {
         width: 95%;
     }
-
     .re .tab .tab-body {
-        width: 100%;
+        width: 100%; margin: 0 auto;
     }
-
-    .tab-body a {
-        width: 27%;
+    .tab-body a { width: 32%;
+        margin: 0 auto;
     }
-
     .tab-body a img {
-        width: 100%;
     }
-
+    .tab-body a {
+    display: inline-block;
+    margin: 0px;
+}
     .tab-head div.active {
         /*        display: block;*/
     }
-
     table {
         float: none;
-        width: auto;
+        width:90%;
+        margin: 30px auto 0 ;
     }
-
     table tbody {
         width: 100%;
     }
-
     tbody tr {
         width: 100%;
         font-size: 11px;
-
     }
-
     tbody tr th {
         text-align: center;
     }
-
     tbody tr td {
         text-align: start;
     }
-
     table tbody tr:nth-of-type(1) {}
-
     table tbody tr:nth-of-type(1) th {
         width: 20%;
     }
-
     table tbody tr:nth-of-type(1) td {
         width: 80%;
     }
-
-    table tfoot {
-        width: 100%;
-    }
-
-    table tfoot tr {
+    .table tfoot tr {
         font-size: 10px;
     }
-
-    table tfoot tr:nth-of-type(3) {
+    .table tfoot tr:nth-of-type(3) {
         font-size: 15px;
     }
-
-
+    tfoot {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    tfoot tr {}
+    tfoot tr th {
+        text-align: right;
+        width:100%;
+    }
+    tfoot tr td {
+        text-align: center;
+        width: 100%
+    }
     .but {
         width: auto;
     }
-
     .button {
         width: 100%;
         height: 30vw;
+        text-align: center;
     }
-
     .but .button a {
         width: 30%;
         height: 30%;
-        font-size: 10px;
+        font-size: 18px;
+        text-align: center;
     }
-
     .list {
         width: auto;
     }
-
     .list header p {
-        font-size: 15px;
         width: 100%;
     }
-
     .list img {
         width: 100%;
     }
-
-
-
 }

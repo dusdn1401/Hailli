@@ -5,7 +5,6 @@
 
 /*=========================================*/
 
-
 .banner input {
     display: none;
 }
@@ -25,8 +24,6 @@
     height: 100%;
 }
 
-
-
 .banner .imgs a {
     width: 100%;
     height: 100%;
@@ -35,9 +32,6 @@
     opacity: 0;
     overflow: hidden;
 }
-
-
-
 
 .banner .imgs a:nth-of-type(1) {
     background: url(../img/banner.jpg) no-repeat;
@@ -48,7 +42,6 @@
     background: url(../img/banner2.jpg) no-repeat;
     background-size: 100% 100%;
 }
-
 
 .banner .indi {
     position: absolute;
@@ -81,12 +74,7 @@
 }
 
 
-
-
-
 /*=========================================*/
-
-
 
 .sample {}
 
@@ -102,7 +90,6 @@
 .sample p {
     text-align: center;
     font-size: 15px;
-
 }
 
 .sample p:after {
@@ -126,6 +113,7 @@
 
 
 /*==========================================*/
+
 .main {}
 
 .list li {
@@ -150,7 +138,6 @@
     background: rgba(0, 0, 0, 0.4);
     color: white;
     opacity: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +158,9 @@
     transition: .5s
 }
 
+
 /*======================================*/
+
 .service {
     text-align: center;
     background: #ededed;
@@ -196,7 +185,6 @@
     height: 2px;
     background: #333;
     margin: 40px auto;
-
 }
 
 .service ul {
@@ -204,7 +192,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .service ul li {}
@@ -221,11 +208,11 @@
     padding: 20px;
 }
 
+
 /*======================================*/
 
-
 .best {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
 }
 
@@ -263,7 +250,6 @@
     width: 60%;
 }
 
-
 .best ul li img {
     width: 100%;
     height: 15vw;
@@ -285,13 +271,11 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-
 }
 
 .best ul li article > a > img {
     width: 25px;
     height: 25px;
-
 }
 
 .best ul li article a h3 {
@@ -299,7 +283,6 @@
     font-size: 15px;
     text-align: center;
     margin: 0;
-
 }
 
 .best ul li article p {
@@ -313,8 +296,7 @@
     padding: 30px 10px;
 }
 
-.best ul li article div p a {}
-
+.best ul li article p a {padding-top: 30px;}
 .best > a {
     display: flex;
     align-items: center;
@@ -322,8 +304,8 @@
     margin: 50px;
 }
 
-/*========================================*/
 
+/*========================================*/
 
 
 /*=========================================*/
@@ -369,169 +351,128 @@
 
 
 /*=========================================*/
+/*모바일*/
 
+@media (min-width:480px) and (max-width:720px){.best ul li article p {
+    font-size: 15px;
+
+}}
 
 
 
 @media (max-width:720px) {
-
     header {
         align-items: center;
         width: 100%;
         margin: 0 auto;
     }
-
     header .top {
         width: 100%;
         margin: 0 auto;
-
     }
-
     header .top h1 {
         text-align: center;
         justify-content: center;
         align-items: center;
         display: flex;
     }
-
     header .top h1 a {
         font-size: 50px;
         color: #333;
     }
-
     header .top .gnb {
         position: absolute;
         right: 10%;
         top: 10px;
     }
-
     header .gnb a {
         padding: 5px;
-
     }
-
-
     header nav.active {
         transform: translateX(0%);
     }
-
     header nav {
         top: 0;
         right: 0;
         position: fixed;
         height: 100%;
         width: 30%;
-
         background: rgba(0, 0, 0, 0.6);
-
-        display:block;
+        display: block;
         align-items: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 1;
         text-align: center;
-
-
     }
-
-
     header nav a {
         top: 25%;
         font-size: 15px;
         display: block;
         padding-bottom: 30px;
-
     }
-
     footer > ul li a {
         padding: 0px;
     }
-    
-
-
     .menu-trigger {
         display: block;
         z-index: 3;
     }
-
-
     .list li:nth-child(1n+5) {
         display: none;
     }
-
     .list li a figure img {
         height: 30vh;
     }
-
     .list li a figure figcaption {
         display: none;
     }
-
+    .best{width: 80%}
     .best ul li {
         display: inline-block;
     }
-
-    
-
-
     .best ul {
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 100%:
     }
-
     .best ul li {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-        margin: 20px 50px 0 0;
+        margin: 0px 0px 0 0;
         width: 100%;
-
     }
-
-
     .best ul li img {
         width: 100%;
         height: 100%;
     }
-
     .best ul li:nth-child(2),
     .best ul li:nth-child(3) {
         display: none;
     }
-
     .best ul li article > a {
         width: 25vw;
         top: -18px;
     }
-
     .service ul {
         width: 100%;
         margin: 0 auto;
         display: flex;
-
         justify-content: center;
     }
-
-
     .service ul li {
         padding: 10px;
     }
-
     .service ul li a figure figcaption {
         padding: 00px;
     }
-
-
-
     .banner .imgs a:nth-of-type(1) {
         background: url(../img/m1banner.jpg) no-repeat;
         background-size: 100% 100%;
     }
-
     .banner .imgs a:nth-of-type(2) {
         background: url(../img/m2banner.jpg) no-repeat;
         background-size: 100% 100%;
     }
-
-
 }

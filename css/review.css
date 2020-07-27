@@ -1,6 +1,5 @@
 @import url('common.css');
 
-
 /**********버거**********/
 
 
@@ -8,12 +7,11 @@
 
 .banner {
     position: relative;
-    width: 100%; height: 150px; margin: 0 auto; 
 }
 
 .banner img {
     width: 100%;
-    height: 100%;
+    height: 150px;
 }
 
 .banner h2 {
@@ -25,8 +23,8 @@
 }
 
 
-
 /**********본문 베스트**********/
+
 .best {
     width: 1080px;
     margin: 0 auto;
@@ -59,7 +57,6 @@
 
 .list ul li figure figcaption {
     white-space: pre-line;
-
     position: absolute;
     background: rgba(10, 10, 10, 0.5);
     color: white;
@@ -72,7 +69,6 @@
     height: 100%;
     transition: .5s;
     opacity: 0;
-
     line-height: 2;
 }
 
@@ -91,7 +87,9 @@
     margin-left: 60%;
 }
 
+
 /**********본문 일반후기**********/
+
 .normal {
     width: 1080px;
     margin: 0 auto;
@@ -137,7 +135,9 @@
     filter: brightness(110%);
 }
 
+
 /**********글쓰기 버튼**********/
+
 .button {
     text-align: center;
     margin: 0 auto;
@@ -147,7 +147,6 @@
 
 .button a {
     float: right;
-
     border: 1px;
     border-radius: 10px;
     width: 100px;
@@ -157,7 +156,9 @@
     line-height: 2;
 }
 
+
 /**********페이지 버튼**********/
+
 .paging {
     text-align: center;
     margin: 3% 0;
@@ -181,166 +182,71 @@
 }
 
 
-
 /*---------모바일 480----------*/
 
-
-   
 @media (max-width:720px) {
-
-    header {
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header .top {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    header .top h1 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-
-    header .top h1 a {
-        font-size: 50px;
-        color: #333;
-    }
-
-    header .top .gnb {
-        position: absolute;
-        right: 10%;
-        top: 10px;
-    }
-
-    header .gnb a {
-        padding: 5px;
-
-    }
-
-
-    header nav.active {
-        transform: translateX(0%);
-    }
-
-    header nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-
-        background: rgba(0, 0, 0, 0.6);
-
-        display:block;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-        text-align: center;
-
-
-    }
-
-
-    header nav a {
-        top: 25%;
-        font-size: 15px;
-        display: block;
-        padding-bottom: 30px;
-
-    }
-
-    .banner img {height: 100px;}
-    
-    .banner h2 {
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-}
-    
-    
-    footer > ul li a {
-        padding: 0px;
-    }
-    
-
-    
-   
     main {
         width: 100%;
+        margin: 0 auto;
     }
-
     .best {
         width: 100%;
+        margin: 0 auto;
     }
-
     .list {
         width: 100%;
         display: inline-block;
     }
-
     .best .list h2 {
         width: 100%;
-        font-size: 15px;
     }
-
-    .list ul {}
-
+    .name{justify-content: space-between; }
+    .name p:nth-of-type(2) {
+    margin-left: 0;
+}
+    .list ul {width: 80%; margin: 0 auto;}
     .list ul li {
         width: 90%;
-/*        justify-content: space-between;*/
+        /*        justify-content: space-between;*/
         margin: 0 auto;
-/*        flex-wrap: wrap;*/
+        /*        flex-wrap: wrap;*/
     }
-
-    .list ul li figure {
-        height: auto;
-        opacity: 1;
-        
+    .list2 ul li figure {
+        overflow: hidden;
+        margin-bottom: 0;
+        padding: 10px;
     }
-
     .list ul li figure img {
         width: 100%;
-        height: 80vw;
-        
+        height: 100%;
+        border-radius: 30px;
     }
-
     .list ul li a figure figcaption {
-        color: black;
         position: static;
         width: 100%;
-        opacity: 1;
+        height: 100%;
+        opacity:1;
         white-space: normal;
         background: none;
         font-size: 12px;
-        padding: 3%;
+        padding: 20px;
+        display: block;
+        color: black;
     }
-
+   
+    
     .list ul li a figure figcaption h3 {
         font-size: 15px;
         padding: 3%;
-        
     }
-
     .normal {
         width: 100%;
     }
-
-    .list2 {}
-
+    .list2 {width: 100%;}
     .list2 h2 {
         width: 100%;
         font-size: 15px;
     }
-
     .list2 ul {
         width: 90%;
         display: flex;
@@ -348,32 +254,39 @@
         margin: 0 auto;
         flex-wrap: wrap;
     }
-
     .list2 ul li {
         width: 48%;
     }
-
     .list2 ul li a {}
-
     .list2 ul li a figure {
         width: 100%;
         height: auto;
-        
     }
-
     .list2 ul li a figure img {
         width: 100%;
-        height: 40vw;
+        height: 100%;
     }
-
     .button {
         width: 90%;
         height: 20vw;
+        padding: 30px;
     }
-
     .button a {
         width: 20%;
         font-size: 10px;
+        
     }
+    
+.button a {
+    float: right;
+    border: 1px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #ad74ce;
+    color: #fcfbe3;
+    font-size: 15px;
+    line-height: 2;
+}
 
+    
 }

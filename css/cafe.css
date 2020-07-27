@@ -1,7 +1,5 @@
 @import url('common.css');
 
-
-
 /*=========================================*/
 
 .banner {
@@ -26,11 +24,11 @@
 
 
 /*===================================*/
+
 .main {
-    width: 60%;
+    width: 65%;
     margin: 80px auto;
 }
-
 
 .main .m1 {
     display: flex;
@@ -41,6 +39,7 @@
 
 .main .m1 img {
     width: 50%;
+    height: 100%
 }
 
 .main .m1 article {
@@ -51,31 +50,30 @@
     align-items: flex-start;
     padding-left: 55px;
     text-align: left;
-
+    white-space: pre-line;
 }
 
 .main .m1 article h2 {
     white-space: pre-line;
-    font-size: 2em;
+    font-size: 25px;
 }
 
-.main .m1 article h2 small {
-    font-size: 0.7em;
+.main .m1 article h2 small { font-size: 15px;
+
 }
 
 .main .m1 article p {
     padding-top: 15px;
-    line-height: 2;
+    line-height: 1.5;
     white-space: pre-line;
     font-size: 18px;
-
 }
 
 .main .m2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-
+    height: 100%:
 }
 
 .main .m2 p {
@@ -91,7 +89,8 @@
 }
 
 .main .m2 img {
-    width: 45%;
+    width: 50%;
+    height: 100%;
 }
 
 .main .m3 {
@@ -100,9 +99,8 @@
 }
 
 .main .m3 img {
-    width: 45%;
+    width: 50%;
     height: 100%;
-
 }
 
 .main .m3 p {
@@ -118,193 +116,85 @@
 }
 
 
-
 /*========================================*/
 
-
-
 @media (max-width:720px) {
-
-    header {
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header .top {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    header .top h1 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-
-    header .top h1 a {
-        font-size: 50px;
-        color: #333;
-    }
-
-    header .top .gnb {
-        position: absolute;
-        right: 10%;
-        top: 10px;
-    }
-
-    header .gnb a {
-        padding: 5px;
-
-    }
-
-
-    header nav.active {
-        transform: translateX(0%);
-    }
-
-    header nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-
-        background: rgba(0, 0, 0, 0.6);
-
-        display: block;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-        text-align: center;
-
-
-    }
-
-
-    header nav a {
-        top: 25%;
-        font-size: 15px;
-        display: block;
-        padding-bottom: 30px;
-
-    }
-
-    .banner img {
-        height: 100px;
-    }
-
-    .banner h2 {
-        position: absolute;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%, -50%);
-        font-size: 25px;
-    }
-
-
-    footer > ul li a {
-        padding: 0px;
-    }
-
+    
     .main {
         width: 100%;
         margin: 10% auto;
         text-align: center;
         justify-content: center;
-        display: block;
+        white-space: pre-line
     }
-
     .main .m1 {
         width: 100%;
         height: auto;
         display: block;
-    }
 
+    }
     .main .m1 img {
         width: 100%;
         height: 90vw;
     }
-
     .main .m1 article {
         width: 100%;
         text-align: center;
         align-items: center;
-        padding: 0;
+        padding: 20px 10px;
     }
-
     .main .m1 article h2 {
         white-space: pre-line;
         font-size: 20px;
     }
-
     .main .m1 article h2 small {
         font-size: 14px;
     }
-
     .main .m1 article p {
         line-height: 2;
-        white-space: normal;
         font-size: 14px;
     }
-
     .main .m2 {
         width: 100%;
         height: auto;
-        display: block;
-        flex-wrap: wrap;
-        order: 1;
+        display:flex;
+        flex-direction: column;
     }
-
     .main .m2 p {
         width: 100%;
         line-height: 2;
         white-space: pre-line;
         font-size: 14px;
-        padding: 0;
-
+        padding: 30px;
         text-align: center;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         order: 2;
-
     }
-
     .main .m2 img {
         width: 100%;
-        height: 90vw;
+        height: 100%;
+        order: 1;
     }
-
-
     .main .m3 {
         width: 100%;
         height: auto;
         display: block;
         align-items: center;
     }
-
     .main .m3 img {
         width: 100%;
         height: 90vw;
     }
-
     .main .m3 p {
         width: 100%;
         line-height: 2;
         white-space: pre-line;
         font-size: 14px;
         padding: 0;
-
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-
-
-
-
-
 }
