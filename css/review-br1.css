@@ -4,84 +4,110 @@
 
 /**********배너**********/
 .banner {
+    position: relative;
     width: 100%;
+    height: 150px;
     margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-.banner p {
-    background: white;
-    padding: 3%;
-    font-size: 25px;
-    color: #333333;
+.banner img {
+    width: 100%;
+    height: 160px;
+}
+
+.banner h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
 }
 
 
 /**********글 내용**********/
 .table {
     width: 1080px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .table table {
     width: 100%;
 }
-.table table hr{
+
+.table table hr {
     margin: 5px auto;
 }
+
+.table table thead tr td:nth-of-type(1) { width: *;}
+
+.table table thead tr td:nth-of-type(2) {width: 100px;}
+
+.table table thead tr td:nth-of-type(3) {width: 100px}
+
+.table table thead tr td:nth-of-type(4) {width: 80px}
+
+.table2 tabel thead tr td:nth-of-type(1){width: *}
+.table2 tabel thead tr td:nth-of-type(2){width: 140px}
+.table2 tabel thead tr td:nth-of-type(3){width: 140px;}
+
 
 /*제목라인*/
 .table thead {
     width: 100%;
-    text-align:  center;
+    text-align: center;
     background-color: #ededed;
-    
+
 
     font-size: 15px;
     color: #333333;
     line-height: 3;
 }
 
-/*후기내용*/ 
-.table tbody{
+/*후기내용*/
+.table tbody {
     width: 100%;
     font-size: 15px;
 }
 
 
-.table tbody tr{
-}
-.table tbody tr:nth-of-type(1){
+.table tbody tr {}
+
+.table tbody tr:nth-of-type(1) {
     line-height: 3;
     border-bottom: 1px solid #ededed;
 }
-.table tbody tr:nth-of-type(2){
+
+.table tbody tr:nth-of-type(2) {
     line-height: 3;
 }
-.table tbody tr:nth-of-type(3){
+
+.table tbody tr:nth-of-type(3) {
     font-size: 15px;
     color: #333333;
     line-height: 1.6;
     white-space: pre-line;
 }
-.table tbody tr:nth-of-type(3) td img{
+
+.table tbody tr:nth-of-type(3) td img {
     width: 400px;
     padding: 20px 0;
 }
 
-.table body tr th{}
-.table tbody tr th:nth-of-type(1){
+.table body tr th {}
+
+.table tbody tr th:nth-of-type(1) {
     text-align: left;
 }
-.table tbody tr th:nth-of-type(2){
+
+.table tbody tr th:nth-of-type(2) {
     text-align: center;
 }
-.table tbody tr th:nth-of-type(3){
+
+.table tbody tr th:nth-of-type(3) {
     text-align: center;
 }
-.table tbody tr th:nth-of-type(4){
+
+.table tbody tr th:nth-of-type(4) {
     text-align: center;
 }
 
@@ -93,7 +119,8 @@
     margin: 0 auto;
     width: 1080px;
 }
-.button a{
+
+.button a {
     width: 150px;
     display: inline-block;
     margin: 0 5px;
@@ -103,7 +130,7 @@
     font-size: 15px;
     color: #333333;
     line-height: 2;
-    
+
     border: 1px solid #ededed;
     background: #ededed;
     border-radius: 10px;
@@ -111,11 +138,11 @@
 }
 
 .button a:nth-of-type(2) {
-    
+
     font-size: 15px;
     color: #fcfbe3;
     line-height: 2;
-    
+
     border: 1px solid #ad74ce;
     background: #ad74ce;
     border-radius: 10px;
@@ -131,14 +158,15 @@
     width: 100%;
     margin: 30px 0;
 }
-.table2 table hr{
+
+.table2 table hr {
     margin: 5px auto;
 }
 
 /*제목라인*/
 .table2 thead {
     width: 100%;
-    text-align:  center;
+    text-align: center;
     background-color: #ededed;
     border-radius: 10px;
 
@@ -147,29 +175,35 @@
     line-height: 3;
 }
 
-/*후기내용*/ 
-.table2 tbody{
+/*후기내용*/
+.table2 tbody {
     width: 100%;
     font-size: 15px;
 }
-.table2 tbody tr{}
-.table2 tbody tr:nth-of-type(1){
+
+.table2 tbody tr {}
+
+.table2 tbody tr:nth-of-type(1) {
     line-height: 3;
     border-bottom: 1px solid #ededed;
 }
-.table2 tbody tr:nth-of-type(2){
+
+.table2 tbody tr:nth-of-type(2) {
     white-space: pre-line;
     line-height: 1.6;
 }
 
-.table2 body tr th{}
-.table2 tbody tr th:nth-of-type(1){
+.table2 body tr th {}
+
+.table2 tbody tr th:nth-of-type(1) {
     text-align: left;
 }
-.table2 tbody tr th:nth-of-type(2){
+
+.table2 tbody tr th:nth-of-type(2) {
     text-align: center;
 }
-.table2 tbody tr th:nth-of-type(3){
+
+.table2 tbody tr th:nth-of-type(3) {
     text-align: center;
 }
 
@@ -198,4 +232,3 @@
     color: red;
 }
 */
-

@@ -33,7 +33,7 @@ main {
 main div:nth-of-type(2) {
     text-align: center;
     padding: 50px;
-    width: 100;
+    box-shadow: 2px 1px 10px 1x rgba(0,0,0,0.2);
     margin: 0 auto;
 }
 
