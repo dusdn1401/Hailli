@@ -26,7 +26,7 @@
 }
 
 .table table tr th {
-    width: 100%;
+    width: 100%; text-align: left;
 }
 
 .table table tr td {
@@ -57,7 +57,6 @@
     background-color: #ededed;
     border: none;
     height: 500px;
-    
     line-height: 1.6;
 }
 
@@ -76,7 +75,7 @@
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding: 3% 0;
+    padding:30px 0 50px;
     width: 1080px;
 }
 
@@ -140,82 +139,47 @@
 
 
 @media (max-width:720px) {
+    main {
+        width: 100%;
+        margin: 0px auto;
+    }
 
-    header {
-        align-items: center;
+    .table {
         width: 100%;
         margin: 0 auto;
-    }
-
-    header .top {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    header .top h1 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-
-    header .top h1 a {
-        font-size: 50px;
-        color: #333;
-    }
-
-    header .top .gnb {
-        position: absolute;
-        right: 10%;
-        top: 10px;
-    }
-
-    header .gnb a {
-        padding: 5px;
-
-    }
-
-
-    header nav.active {
-        transform: translateX(0%);
-    }
-
-    header nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-
-        background: rgba(0, 0, 0, 0.6);
-
-        display: block;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-        text-align: center;
-
-
-    }
-
-
-    header nav a {
-        top: 25%;
         font-size: 15px;
-        display: block;
-        padding-bottom: 30px;
-
     }
 
-    footer > ul li a {
-        padding: 0px;
+    .table table {
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .main {
-        width: 80%;
-        margin: 80px auto;
+    .table hr {
+        width: 100%;
+    }
 
+    /*제목라인*/
+    .table tr {
+        line-height: 3;
+        font-size: 15px;
+        color: #333333;
+    }
+
+    .table table tr th {
+        width: 100%;
+        text-align: left;
+    }
+
+    .table table tr td {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .table table tr:nth-of-type(4) td textarea {
+        height: 200px;
     }
 }

@@ -53,7 +53,7 @@ main {
 .cart {
     margin: 40px auto;
     padding: 0 50px;
-    width:80%;
+    width: 80%;
 }
 
 .cart h2 {
@@ -65,41 +65,55 @@ main {
 .tab {
     text-align: center;
 }
-.tab p{
-    margin-top:100px;
-    color:#666;
-    font-size:18px;
+
+.tab p {
+    margin-top: 100px;
+    color: #666;
+    font-size: 18px;
 }
 
-.tab a{
-    background:#AD74CE;
-    padding:10px 70px;
+.tab a {
+    background: #AD74CE;
+    padding: 10px 70px;
     border-radius: 10px;
-    display:inline-block;
-    margin:40px auto;
-    color:#fff;
-    transition:.5s;
-}
-.tab a:hover{
-    background:#8953A8;
+    display: inline-block;
+    margin: 40px auto;
+    color: #fff;
+    transition: .5s;
 }
 
-@media (max-width:992px) {
-    .menu {
-        background: #ededed;
-        padding: 50px 0px;
-        text-align: right;
-        width: 25%;
-        margin-left: 0%;
-    }
+.tab a:hover {
+    background: #8953A8;
 }
 
-@media (min-width:992px) and (max-width:1178px) {
-    .menu {
-        background: #ededed;
-        padding: 50px 0px;
-        text-align: right;
-        width: 25%;
-        margin-left: 0%;
+@media (max-width:720px) {
+    main {
+        width: 100%;
     }
+
+    .menu {
+        width: 30%;
+    }
+    .cart {
+    margin: 50px auto;
+    padding: 0;
+    width: 80%;
+}
+.cart h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .tab p {
+        margin: 50px auto;
+        color: #666;
+        font-size: 18px;
+    }
+
+    .tab a {
+        padding: 10px;
+        margin: 0px auto;
+    }
+    
 }

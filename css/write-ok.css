@@ -2,56 +2,45 @@
 
 
 
-.all{
+.all {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
-.all > .all-m{}
-.all-m{
+
+.all > .all-m {}
+
+.all-m {
     border-radius: 10px;
     background-color: #ffffff;
     width: 350px;
     padding: 20px;
-    
+
     text-align: center;
     line-height: 2;
 }
-.all-m > p{
+
+.all-m > p {
     font-size: 18px;
     padding: 10px;
 }
-.all-m > hr{
+
+.all-m > hr {
     width: 300px;
 }
 
-.all-m > a{
+.all-m > a {
     font-size: 15px;
 }
 
 /*==================================*/
 
 
-/**********배너**********/
-.banner {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner p {
-    background: white;
-    padding: 3%;
-    font-size: 25px;
-    color: #333333;
-}
 
 
 /**********글 내용**********/
@@ -78,6 +67,7 @@
 
 .table table tr th {
     width: 100%;
+    text-align: left;
 }
 
 .table table tr td {
@@ -108,7 +98,7 @@
     background-color: #ededed;
     border: none;
     height: 500px;
-    
+
     line-height: 1.6;
 }
 
@@ -187,3 +177,54 @@
 */
 
 
+
+@media (max-width:720px) {
+    main {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .all {
+        width: 100%;
+        height: 100%;
+    }
+
+    .table {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .table table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .table hr {
+        width: 100%;
+    }
+
+    /*제목라인*/
+    .table tr {
+        line-height: 3;
+        font-size: 15px;
+        color: #333333;
+    }
+
+    .table table tr th {
+        width: 100%;
+        text-align: left;
+    }
+
+    .table table tr td {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .table table tr:nth-of-type(4) td textarea {
+        height: 200px;
+    }
+}

@@ -73,7 +73,7 @@
     background-color: #ededed;
     border: none;
     height: 500px;
-    
+
     line-height: 1.6;
 }
 
@@ -92,7 +92,7 @@
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding: 3% 0;
+    padding: 50px 0;
     width: 1080px;
 }
 
@@ -151,4 +151,48 @@
 }
 */
 
+@media (max-width:720px) {
+    main {
+        width: 100%;
+        margin: 0px auto;
+    }
 
+    .table {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .table table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .table hr {
+        width: 100%;
+    }
+
+    /*제목라인*/
+    .table tr {
+        line-height: 3;
+        font-size: 15px;
+        color: #333333;
+    }
+
+    .table table tr th {
+        width: 100%;
+        text-align: left;
+    }
+
+    .table table tr td {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .table table tr:nth-of-type(4) td textarea {
+        height: 200px;
+    }
+}
