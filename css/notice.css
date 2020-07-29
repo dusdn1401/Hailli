@@ -1,6 +1,5 @@
 @import url('common.css');
 
-/**********버거**********/
 
 /**********배너**********/
 
@@ -9,12 +8,10 @@
     width: 100%;
     height: 150px;
     margin: 0 auto;
+    background: url('../img/2-1.jpg') no-repeat;
+    background-size: 100% 100%;
 }
 
-.banner img {
-    width: 100%;
-    height: 100%;
-}
 
 .banner h2 {
     position: absolute;
@@ -89,6 +86,10 @@
     text-align: left;
 }
 
+.table tbody tr:nth-of-type(1) th:nth-of-type(2) a {
+    color: red;
+}
+
 .table tbody tr th:nth-of-type(3) {
     text-align: center;
 }
@@ -107,168 +108,113 @@
 .button {
     text-align: center;
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
 }
 
 .button a {
-    float: right;
-    margin-bottom: 50px;
-    border: 1px;
+    width: 150px;
+    display: inline-block;
     border-radius: 10px;
-    width: 100px;
-    background-color: #ad74ce;
-    color: #fcfbe3;
+    margin: 40px auto;
+    color: #fff;
+    transition: .5s;
     font-size: 15px;
+    background: #ad74ce;
     line-height: 2;
 }
 
-
-/**********페이지 버튼**********/
-
-
-/*
-.paging{
-    text-align: center;
-    margin: 3% 0;
-}
-.paging a{
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 15px;
-    padding: 1%;
-}
-
-.paging a:hover:after,
-.paging a.active:after{
-    content: '';
-    border: 1px solid #777777;
-    width: 100%;
-    display: block;
-    color: red;
-}
-*/
 
 
 /*---------모바일 480----------*/
 
 @media (max-width:720px) {
-    header {
-        align-items: center;
+
+    .banner {
+        position: relative;
         width: 100%;
+        height: 150px;
         margin: 0 auto;
+        background: url('../img/17.jpg') no-repeat;
+        background-size: 100% 100%;
     }
-    header .top {
+
+
+    main {
         width: 100%;
-        margin: 0 auto;
     }
-    header .top h1 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    header .top h1 a {
-        font-size: 50px;
-        color: #333;
-    }
-    header .top .gnb {
-        position: absolute;
-        right: 10%;
-        top: 10px;
-    }
-    header .gnb a {
-        padding: 5px;
-    }
-    header nav.active {
-        transform: translateX(0%);
-    }
-    header nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-        background: rgba(0, 0, 0, 0.6);
-        display: block;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-        text-align: center;
-    }
-    header nav a {
-        top: 25%;
-        font-size: 15px;
-        display: block;
-        padding-bottom: 30px;
-    }
-    .banner img {
-        height: 100px;
-    }
-    .banner h2 {
-        position: absolute;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%, -50%);
-        font-size: 25px;
-    }
-    .menu-trigger {
-        display: block;
-        z-index: 3;
-    }
-    footer > ul li a {
-        padding: 0px;
-    }
-    main {}
+
     .notice {
-        width: auto;
-    }
-    .table {
         width: 100%;
-        padding: 0 0 0 0px;
     }
-    .table thead {}
+
+    .table {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .button {
         width: 100%;
-        height: 20vw;
+
     }
+
     .button a {
-        font-size: 10px;
-        margin: 20px;
+        padding: 5px 5px;
+        border-radius: 10px;
+        margin: 40px auto;
+        transition: .5s;
+        font-size: 15px;
+        width: 100px;
     }
+
     .table table thead td {
-        font-size: 10px;
+        font-size: 13px;
     }
+
     .table table thead td:nth-of-type(1) {
         width: 10%;
     }
+
     .table table thead td:nth-of-type(3) {
         width: 10%;
+        display: none;
     }
+
     .table table thead td:nth-of-type(4) {
         width: 20%;
     }
+
     .table table thead td:nth-of-type(5) {
         width: 10%;
     }
+
     .table tbody tr th:nth-of-type(1) {
         text-align: center;
     }
+
     .table tbody tr th:nth-of-type(2) {
         text-align: center;
     }
+
+    .table tbody tr:nth-of-type(1) th:nth-of-type(2) a {
+        color: red;
+    }
+
     .table tbody tr th:nth-of-type(3) {
         text-align: center;
+        display: none;
     }
+
     .table tbody tr th:nth-of-type(4) {
         text-align: center;
     }
+
     .table tbody tr th:nth-of-type(5) {
         text-align: center;
     }
-    .table table tbody th {
-        font-size: 10px;
+
+    .table table tbody tr th:nth-of-type(4),
+    .table table tbody tr th:nth-of-type(5) {
+        font-size: 12px;
     }
 }

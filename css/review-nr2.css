@@ -38,31 +38,31 @@
 }
 
 .table table thead tr td:nth-of-type(1) {
-    width: *;
+    width: 50%;
 }
 
 .table table thead tr td:nth-of-type(2) {
-    width: 100px;
+    width: 20%;
 }
 
 .table table thead tr td:nth-of-type(3) {
-    width: 100px
+    width: 20%;
 }
 
 .table table thead tr td:nth-of-type(4) {
-    width: 80px
+    width: 10%;
 }
 
 .table2 tabel thead tr td:nth-of-type(1) {
-    width: *
+    width: 80%;
 }
 
 .table2 tabel thead tr td:nth-of-type(2) {
-    width: 140px
+    width: 20%;
 }
 
 .table2 tabel thead tr td:nth-of-type(3) {
-    width: 140px;
+    width: 20%;
 }
 
 
@@ -250,21 +250,21 @@
 
 /*=========모바일=========*/
 
+
 @media (max-width:720px) {
     .main {
         width: 100%;
         margin: 80px auto;
     }
-    
-    .banner {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    margin: 0 auto;
-    background: url('../img/17.jpg') no-repeat;
-    background-size: 100% 100%;
-}
 
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        background: url('../img/17.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
 
     .button {
         text-align: center;
@@ -278,6 +278,13 @@
         width: 95%;
     }
 
+    .table table tbody tr:nth-of-type(1) th {
+        width: 60%;
+    }
+
+    .table table tbody tr:nth-of-type(3) img {
+        width: 100%;
+    }
 
     .table2 {
         width: 90%;

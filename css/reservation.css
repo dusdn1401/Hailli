@@ -2,17 +2,13 @@
 
 
 /**********배너**********/
-
 .banner {
     position: relative;
     width: 100%;
     height: 150px;
     margin: 0 auto;
-}
-
-.banner img {
-    width: 100%;
-    height: 160px;
+    background: url('../img/2-1.jpg') no-repeat;
+    background-size: 100% 100%;
 }
 
 .banner h2 {
@@ -251,107 +247,160 @@ tfoot tr:nth-of-type(3) {
 }
 
 
-/*---------모바일 480----------*/
+/*---------모바일 720----------*/
 
 @media (max-width:720px) {
     main {
         width: 100%;
     }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        background: url('../img/17.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+
     .re {
         height: auto;
         width: 100%;
         overflow: none;
     }
+
     .re .tab {
         float: none;
         width: 100%;
     }
+
     .re .tab .tab-head {
         width: 100%;
     }
+
     .tab-head div {
         width: 95%;
     }
+
     .re .tab .tab-body {
-        width: 100%; margin: 0 auto;
-    }
-    .tab-body a { width: 32%;
+        width: 100%;
         margin: 0 auto;
     }
-    .tab-body a img {
-    }
+
     .tab-body a {
-    display: inline-block;
-    margin: 0px;
-}
+        width: 32%;
+        margin: 0 auto;
+    }
+
+    .tab-body a img {}
+
+    .tab-body a {
+        display: inline-block;
+        margin: 0px;
+    }
+
     .tab-head div.active {
         /*        display: block;*/
     }
+
     table {
         float: none;
-        width:90%;
-        margin: 30px auto 0 ;
+        width: 95%;
+        margin: 30px auto 0;
     }
+
     table tbody {
         width: 100%;
     }
+
     tbody tr {
-        width: 100%;
+        width: 50%;
         font-size: 11px;
     }
+   
     tbody tr th {
         text-align: center;
+        width: 50%;
     }
+
     tbody tr td {
         text-align: start;
     }
+
     table tbody tr:nth-of-type(1) {}
+
     table tbody tr:nth-of-type(1) th {
         width: 20%;
     }
+
     table tbody tr:nth-of-type(1) td {
         width: 80%;
     }
+
     .table tfoot tr {
         font-size: 10px;
     }
+
     .table tfoot tr:nth-of-type(3) {
         font-size: 15px;
     }
+
     tfoot {
         width: 100%;
-        overflow: hidden;
         margin: 0 auto;
     }
-    tfoot tr {}
+
+    tfoot tr {
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+    }
+
     tfoot tr th {
         text-align: right;
-        width:100%;
-    }
-    tfoot tr td {
-        text-align: center;
         width: 100%
     }
+
+    tfoot tr td {
+        width: 50%;
+        text-align: right;
+        font-size: 20px;
+        padding: 10px
+    }
+
+    tfoot tr:nth-of-type(1) {}
+
+    tfoot tr:nth-of-type(2) {}
+
+    tfoot tr:nth-of-type(3) {
+        font-size: 20px;
+    }
+
     .but {
         width: auto;
     }
+
     .button {
         width: 100%;
         height: 30vw;
         text-align: center;
     }
+
     .but .button a {
         width: 30%;
         height: 30%;
         font-size: 18px;
         text-align: center;
     }
+
     .list {
         width: auto;
     }
+
     .list header p {
         width: 100%;
     }
+
     .list img {
         width: 100%;
     }

@@ -31,7 +31,7 @@
 }
 
 .all-m > hr {
-    width: 300px;
+    width: 100%;
 }
 
 .all-m > a {
@@ -152,36 +152,18 @@
 
 
 
-/**********페이지 버튼**********/
-/*
-.paging{
-    text-align: center;
-    margin: 3% 0;
-}
-.paging a{
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 15px;
-    padding: 1%;
-}
-
-.paging a:hover:after,
-.paging a.active:after{
-    content: '';
-    border: 1px solid #777777;
-    width: 100%;
-    display: block;
-    color: red;
-}
-*/
-
+/*============================*/
 
 
 @media (max-width:720px) {
     main {
         width: 100%;
         margin: 0px auto;
+    }
+
+    .all-m {
+        width: 60%;
+        padding: 20px;
     }
 
     .all {

@@ -170,76 +170,83 @@ main {
         padding: 0 10px;
         width: 90%;
     }
+
     .edit {}
 
-.edit ul {}
+    .edit ul {}
 
-.edit ul li {
-    font-size: 15px;
-    padding: 7px 0;
-}
+    .edit ul li {
+        font-size: 15px;
+        padding: 7px 0;
+    }
 
-.edit ul li label {
-    margin-right: 20px;
-    width:30%;
-    text-align: left;
-    display: inline-block;
-}
+    .edit ul li label {
+        margin-right: 20px;
+        width: 30%;
+        text-align: left;
+        display: inline-block;
+    }
 
-.edit ul li span {
-    width: 60%;
-    display: inline-block;
-    text-align: left;
-}
+    .edit ul li span {
+        width: 60%;
+        display: inline-block;
+        text-align: left;
+    }
 
-.edit ul li > input {
-    background: #ededed;
-    width: 50%;
-    outline-style: none;
-    border: none;
-    font-size: 15px;
-    padding: 15px 20px;
-    border-radius: 10px;
-}
+    .edit ul li > input {
+        background: #ededed;
+        width: 50%;
+        outline-style: none;
+        border: none;
+        font-size: 15px;
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
 
-/*회원정보-전화번호*/
-.phone {}
+    /*회원정보-전화번호*/
+    .phone {}
 
-.phone label {}
+    .phone label {}
 
-.phone select {
-    outline-style: none;
-    margin-bottom: 10px;
-    width: 12%;
-    padding: 14px 20px;
-    background: #ededed;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-}
+    .phone select {
+        outline-style: none;
+        margin-bottom: 10px;
+        width: 50%;
+        padding: 14px 20px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
 
-.phone select option {}
+    .phone select option {}
 
-.phone input {
-    outline-style: none;
-    width: 13%;
-    padding: 14px 20px;
-    background: #ededed;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-}
+    .phone input {
+        outline-style: none;
+        width: 50%;
+        padding: 14px 20px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
 
-.phone input:nth-of-type(3) {
-    width: 10%;
-    background: #666;
-    color: #fff;
-    cursor: pointer;
-    transition: .5s;
-    padding: 12px 20px;
-}
+    .phone input:nth-of-type(2) {
+        display: none;
+    }
 
-.phone input:nth-of-type(3):hover {
-    background: #444;
-}
+    .phone input:nth-of-type(3) {
+        width: 30%;
+        background: #666;
+        color: #fff;
+        cursor: pointer;
+        transition: .5s;
+        padding: 12px 0px;
+
+    }
+
+    .phone input:nth-of-type(3):hover {
+        background: #444;
+    }
+
 }

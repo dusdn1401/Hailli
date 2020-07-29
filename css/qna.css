@@ -2,23 +2,21 @@
 
 main {
     margin: 0 auto;
-    width: 1080px;
-    height: 700px;
+    width: 60%;
 }
 
 .member {}
 
 
 .qna {
-    margin: 0 auto;
-    padding: 0 50px;
-    width:80%;
-    height:100%;
+    width: 100%;
+    margin: 0 auto 50px;
+    height: 100%;
 }
 
 .qna h2 {
     font-size: 25px;
-    padding-top:40px;
+    padding-top: 40px;
     margin-bottom: 35px;
     text-align: center;
 }
@@ -30,7 +28,7 @@ main {
 .qna_table {
     border-spacing: 0;
     border-radius: 10px;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -42,9 +40,9 @@ main {
 
 .qna_table thead tr {}
 
-.qna_table thead th { 
+.qna_table thead th {
     color: #333;
-    font-size: 15px;
+    font-size: 18px;
     padding: 12px;
 }
 
@@ -78,7 +76,7 @@ main {
 
 
 .qna_table tbody td a {
-    font-size: 15px;
+    font-size: px;
     color: #333;
 }
 
@@ -86,25 +84,54 @@ main {
     font-size: 15px;
 }
 
-.qna_table tbody td:nth-of-type(2){
+.qna_table tbody td:nth-of-type(2) {
     text-overflow: ellipsis;
     text-align: left;
 }
-.qna_list > a{
+
+.qna_list > a {
     text-align: right;
-    padding:10px 60px;
+    padding: 10px 60px;
     border-radius: 10px;
-    color:#fff;
-    background:#AD74CE;
+    color: #fff;
+    background: #AD74CE;
     display: inline-block;
 }
 
 
-.paging{
+.paging {
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
 }
-.paging a{
-    font-size:15px;
-    margin:15px;
+
+.paging a {
+    font-size: 15px;
+    margin: 15px;
+}
+
+
+/*============================*/
+
+
+@media (max-width:720px) {
+    main {
+        width: 100%;
+        margin: 0 auto 50px;
+    }
+
+    .qna {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        height: 100%
+    }
+
+    .qna_table thead th:nth-of-type(3) {
+        width: 10%;
+        display: none;
+    }
+
+    .qna_table tbody td:nth-of-type(3) {
+        display: none;
+    }
 }

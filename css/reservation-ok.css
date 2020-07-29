@@ -15,8 +15,8 @@
 
 .all-m {
     border-radius: 10px;
-    background-color: #ffffff;
-    width: 350px;
+    background-color: #fff;
+    width: 20%;
     padding: 20px;
 
     text-align: center;
@@ -29,81 +29,29 @@
 }
 
 .all-m > hr {
-    width: 300px;
+    width: 100%;
 }
 
 .all-m > a {
     font-size: 15px;
 }
 
-
-/**********버거**********/
-.menu-trigger {
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    transition: .5s;
-    right: 5vw;
-    top: 5vw;
-    display: none;
-}
-
-.menu-trigger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ad74ce;
-}
-
-.menu-trigger .active span {
-    background: lightskyblue;
-}
-
-.munu-trigger .active {
-    transform: rotate(90deg);
-}
-
-.menu-trigger span:nth-of-type(1) {
-    top: 0;
-}
-
-.menu-trigger span:nth-of-type(2) {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.menu-trigger span:nth-of-type(3) {
-    bottom: 0%;
-}
-
-
-
 /**********배너**********/
 .banner {
+    position: relative;
     width: 100%;
     height: 150px;
-    position: relative;
     margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    background: url('../img/2-1.jpg') no-repeat;
+    background-size: 100% 100%;
 }
 
 .banner h2 {
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-   
-    color: #333333;
-}
-
-.banner img {
-    width: 100%;
+    font-size: 2em;
 }
 
 
@@ -318,116 +266,175 @@ tfoot tr:nth-of-type(3) {
 
 
 
-/*---------모바일 480----------*/
+/*---------모바일 720----------*/
 
-
-@media (max-width:480px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+@media (max-width:720px) {
+    main {
+        width: 100%;
     }
 
-    header .hailli {}
+    .all-m {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+        line-height: 2;
+    }
 
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
+    .all-m > hr {
+        width: 100%;
+    }
+
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        background: url('../img/17.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .re {
+        height: auto;
+        width: 100%;
+        overflow: none;
+    }
+
+    .re .tab {
+        float: none;
+        width: 100%;
+    }
+
+    .re .tab .tab-head {
+        width: 100%;
+    }
+
+    .tab-head div {
+        width: 95%;
+    }
+
+    .re .tab .tab-body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tab-body a {
+        width: 32%;
+        margin: 0 auto;
+    }
+
+    .tab-body a img {}
+
+    .tab-body a {
+        display: inline-block;
+        margin: 0px;
+    }
+
+    .tab-head div.active {
+        /*        display: block;*/
+    }
+
+    table {
+        float: none;
+        width: 95%;
+        margin: 30px auto 0;
+    }
+
+    table tbody {
+        width: 100%;
+    }
+
+    tbody tr {
+        width: 50%;
+        font-size: 11px;
+    }
+
+    tbody tr th {
+        text-align: center;
+        width: 50%;
+    }
+
+    tbody tr td {
+        text-align: start;
+    }
+
+    table tbody tr:nth-of-type(1) {}
+
+    table tbody tr:nth-of-type(1) th {
+        width: 20%;
+    }
+
+    table tbody tr:nth-of-type(1) td {
+        width: 80%;
+    }
+
+    .table tfoot tr {
         font-size: 10px;
     }
 
-    header .hailli .gnb a {
-        padding: 0 10px;
+    .table tfoot tr:nth-of-type(3) {
+        font-size: 15px;
     }
 
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-
-        display: flex;
-        align-items: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav {
-        width: 30%;
-
-        display: block;
-        text-align: center
-    }
-
-    header .hailli nav a {
-        top: 10%;
-
-        font-size: 12px;
-        color: #fff;
-        display: block;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-    }
-
-    slide {
+    tfoot {
         width: 100%;
-    }
-
-    .banner {
-
-        background: url(../img/116.jpg) no-repeat 20% 50%;
-        background-size: cover;
-        width: 100%;
-        height: 20vw;
-        /*
-        width: 50%;
-        height: 50%;
-        position: relative;
         margin: 0 auto;
+    }
+
+    tfoot tr {
         text-align: center;
-        justify-content: center;
-        align-items: center;
-*/
+        padding: 30px;
+        width: 100%;
     }
 
-    .banner h2 {
+    tfoot tr th {
+        text-align: right;
+        width: 100%
+    }
+
+    tfoot tr td {
+        width: 50%;
+        text-align: right;
         font-size: 20px;
-        /*
-        position: absolute;
-        left: 0; top: 0;
-        transform: translate(-50%, -50%);
-        color: #333333;
-*/
+        padding: 10px
     }
 
-    .banner img {
-        display: none;
+    tfoot tr:nth-of-type(1) {}
+
+    tfoot tr:nth-of-type(2) {}
+
+    tfoot tr:nth-of-type(3) {
+        font-size: 20px;
     }
 
-
-
-    .footer {}
-
-    .h_f {}
-
-    .h_f p {
-        font-size: 14px;
+    .but {
+        width: auto;
     }
 
-    .h_f div {}
+    .button {
+        width: 100%;
+        height: 30vw;
+        text-align: center;
+    }
+
+    .but .button a {
+        width: 30%;
+        height: 30%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .list {
+        width: auto;
+    }
+
+    .list header p {
+        width: 100%;
+    }
+
+    .list img {
+        width: 100%;
+    }
 }

@@ -103,3 +103,25 @@ main {
         margin-left: 0%;
     }
 }
+
+
+
+@media (max-width:720px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        width: 30%;
+    }
+    .order_list a{
+    background:#AD74CE;
+    padding:10px;
+    border-radius: 10px;
+    display:inline-block;
+    margin:40px auto;
+    color:#fff;
+    transition:.5s;
+}
+}

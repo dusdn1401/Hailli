@@ -8,7 +8,7 @@ main {
 
 .sign_up {
     position: relative;
-    background:url(../img/img_cafe.jpg)0 no-repeat;
+    background: url(../img/img_cafe.jpg)0 no-repeat;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 700px;
     background: #fff;
     border-radius: 40px;
@@ -88,9 +88,11 @@ main {
 .inp div input:nth-of-type(3):hover {
     background: #444;
 }
-.inp p:nth-of-type(6) input{
-    height:100px;
+
+.inp p:nth-of-type(6) input {
+    height: 100px;
 }
+
 .inp p:nth-of-type(7) input {
     background: #ad74ce;
     color: white;
@@ -103,4 +105,58 @@ main {
 
 .inp p:nth-of-type(7) input:hover {
     background: #8953A8;
+}
 
+/*================================*/
+
+
+@media (max-width:720px) {
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 95%;
+    }
+
+    .inp div {
+        width: 70%
+    }
+
+    .inp div select {
+        outline-style: none;
+        margin-bottom: 10px;
+        width: 25%;
+        padding: 14px 20px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .inp div input {
+        outline-style: none;
+        width: 30%;
+        text-align: center;
+        padding: 15px 5px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .inp div input:nth-of-type(3) {
+        width: 45%;
+        font-size: 12px;
+        background: #666;
+        color: #fff;
+        padding: 15px 5px;
+        cursor: pointer;
+        transition: .5s;
+        margin-bottom: 10px;
+    }
+
+
+
+}

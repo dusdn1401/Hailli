@@ -209,4 +209,88 @@ main {
         padding: 0 10px;
         width: 90%;
     }
+
+    .reyer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    .popup {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        color: #333;
+        width: 50%;
+
+
+
+
+    }
+
+    .popup p {
+        font-size: 18px;
+        border-bottom: 2px solid #ededed;
+        padding: 35px 0px;
+
+    }
+
+    .popup a {
+        font-size: 15px;
+        padding: 15px 50px;
+        display: inline-block;
+    }
+
+    .phone {}
+
+    .phone label {}
+
+    .phone select {
+        outline-style: none;
+        margin-bottom: 10px;
+        width: 50%;
+        padding: 14px 20px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .phone select option {}
+
+    .phone input {
+        outline-style: none;
+        width: 50%;
+        padding: 14px 20px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .phone input:nth-of-type(2) {
+        display: none;
+    }
+
+    .phone input:nth-of-type(3) {
+        width: 30%;
+        background: #666;
+        color: #fff;
+        cursor: pointer;
+        transition: .5s;
+        padding: 12px 0px;
+
+    }
+
+    .phone input:nth-of-type(3):hover {
+        background: #444;
+    }
+
 }

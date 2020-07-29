@@ -462,7 +462,7 @@
         }
         header .top .gnb {
             position: absolute;
-            right: 10%;
+            left: 10%;
             top: 10px;
         }
         header .gnb a {
