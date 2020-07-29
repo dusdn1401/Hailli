@@ -1,8 +1,5 @@
 @import url(common.css);
 
-/*====================================*/
-
-
 /*=========================================*/
 
 .banner input {
@@ -14,7 +11,6 @@
     height: 400px;
     margin: 0 auto;
     position: relative;
-    margin-top: 10px;
 }
 
 .banner .imgs {
@@ -296,7 +292,10 @@
     padding: 30px 10px;
 }
 
-.best ul li article p a {padding-top: 30px;}
+.best ul li article p a {
+    padding-top: 30px;
+}
+
 .best > a {
     display: flex;
     align-items: center;
@@ -353,44 +352,52 @@
 /*=========================================*/
 /*모바일*/
 
-@media (min-width:480px) and (max-width:720px){.best ul li article p {
-    font-size: 15px;
-
-}}
+@media (min-width:480px) and (max-width:720px) {
+    .best ul li article p {
+        font-size: 15px;
+    }
+}
 
 
 
 @media (max-width:720px) {
-    header {
+    /* header {
         align-items: center;
         width: 100%;
         margin: 0 auto;
     }
+
     header .top {
         width: 100%;
         margin: 0 auto;
     }
+
     header .top h1 {
         text-align: center;
         justify-content: center;
         align-items: center;
         display: flex;
     }
+
     header .top h1 a {
         font-size: 50px;
         color: #333;
     }
+
     header .top .gnb {
         position: absolute;
         right: 10%;
         top: 10px;
     }
+
     header .gnb a {
         padding: 5px;
     }
+
     header nav.active {
         transform: translateX(0%);
     }
+
     header nav {
         top: 0;
         right: 0;
@@ -405,32 +412,43 @@
         z-index: 1;
         text-align: center;
     }
+
     header nav a {
         top: 25%;
         font-size: 15px;
         display: block;
         padding-bottom: 30px;
     }
+
     footer > ul li a {
         padding: 0px;
     }
+
     .menu-trigger {
         display: block;
         z-index: 3;
-    }
+    }*/
+
     .list li:nth-child(1n+5) {
         display: none;
     }
+
     .list li a figure img {
         height: 30vh;
     }
+
     .list li a figure figcaption {
         display: none;
     }
-    .best{width: 80%}
+
+    .best {
+        width: 80%
+    }
+
     .best ul li {
         display: inline-block;
     }
+
     .best ul {
         display: block;
         justify-content: center;
@@ -438,39 +456,48 @@
         text-align: center;
         width: 100%:
     }
+
     .best ul li {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
         margin: 0px 0px 0 0;
         width: 100%;
     }
+
     .best ul li img {
         width: 100%;
         height: 100%;
     }
+
     .best ul li:nth-child(2),
     .best ul li:nth-child(3) {
         display: none;
     }
+
     .best ul li article > a {
         width: 25vw;
         top: -18px;
     }
+
     .service ul {
         width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
     }
+
     .service ul li {
         padding: 10px;
     }
+
     .service ul li a figure figcaption {
         padding: 00px;
     }
+
     .banner .imgs a:nth-of-type(1) {
         background: url(../img/m1banner.jpg) no-repeat;
         background-size: 100% 100%;
     }
+
     .banner .imgs a:nth-of-type(2) {
         background: url(../img/m2banner.jpg) no-repeat;
         background-size: 100% 100%;
