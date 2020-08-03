@@ -11,13 +11,15 @@
     background-size: 100% 100%;
 }
 
+
 .banner h2 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 32px;
 }
+
 
 /**********본문 베스트**********/
 
