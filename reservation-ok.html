@@ -64,12 +64,9 @@
 
         <div class="re">
             <div class="tab">
-                <div class="tab-head">
-                    <div class="t-con active">1</div>
-                    <div class="t-con">2</div>
-                    <div class="t-con">3</div>
-                    <div class="t-con">4</div>
-                </div>
+
+                <p> <img src="img/gallery/1.jpg"></p>
+
                 <div class="tab-body">
                     <a href="#" class="active"><img src="img/gallery/10.jpg" alt=""></a>
                     <a href="#"><img src="img/gallery/11.jpg" alt=""></a>
@@ -78,6 +75,7 @@
                 </div>
 
             </div>
+
             <table>
                 <tbody>
                     <!--<col width="120">
@@ -101,35 +99,35 @@
                     <tr>
                         <th>케이크 사이즈</th>
                         <td>
-                            <input type="checkbox" name="size" id="size1"> <label for="size1"> 미니 (11,000원) </label>
-                            <input type="checkbox" name="size" id="size2"> <label for="size2"> 1호 (24,000원) </label>
+                            <input type="radio" name="size" id="size1"> <label for="size1"> 미니 (11,000원) </label>
+                            <input type="radio" name="size" id="size2"> <label for="size2"> 1호 (24,000원) </label>
                         </td>
 
                     </tr>
                     <tr>
                         <th>케이크 모양</th>
                         <td>
-                            <input type="checkbox" name="shape" id="shape1"> <label for="shape1"> 원형 </label>
+                            <input type="radio" name="shape" id="shape1"> <label for="shape1"> 원형 </label>
 
-                            <input type="checkbox" name="shape" id="shape2"> <label for="shape2"> 하트 (+4,000원) </label>
+                            <input type="radio" name="shape" id="shape2"> <label for="shape2"> 하트 (+4,000원) </label>
                         </td>
                     </tr>
                     <tr>
                         <th>케이크 시트 맛</th>
                         <td>
-                            <input type="checkbox" name="sheet" id="sheet1"><label for="sheet1"> 바닐라(기본) </label>
-                            <input type="checkbox" name="sheet" id="sheet2"><label for="sheet2"> 초코 </label>
-                            <input type="checkbox" name="sheet" id="sheet3"><label for="sheet3"> 오레오 </label>
-                            <input type="checkbox" name="sheet" id="sheet4"><label for="sheet4"> 얼그레이 </label>
+                            <input type="radio" name="sheet" id="sheet1"><label for="sheet1"> 바닐라(기본) </label>
+                            <input type="radio" name="sheet" id="sheet2"><label for="sheet2"> 초코 </label>
+                            <input type="radio" name="sheet" id="sheet3"><label for="sheet3"> 오레오 </label>
+                            <input type="radio" name="sheet" id="sheet4"><label for="sheet4"> 얼그레이 </label>
                         </td>
                     </tr>
                     <tr>
                         <th>생크림 모양</th>
                         <td>
-                            <input type="checkbox" name="cream" id="cream1"><label for="cream1"> 기본 </label>
-                            <input type="checkbox" name="cream" id="cream2"><label for="cream2"> 쉘 </label>
-                            <input type="checkbox" name="cream" id="cream3"><label for="cream3"> 리본(+1,000원) </label>
-                            <input type="checkbox" name="cream" id="cream4"><label for="cream4"> 꽃(+3,000원) </label>
+                            <input type="radio" name="cream" id="cream1"><label for="cream1"> 기본 </label>
+                            <input type="radio" name="cream" id="cream2"><label for="cream2"> 쉘 </label>
+                            <input type="radio" name="cream" id="cream3"><label for="cream3"> 리본(+1,000원) </label>
+                            <input type="radio" name="cream" id="cream4"><label for="cream4"> 꽃(+3,000원) </label>
                         </td>
                     </tr>
                     <tr>
@@ -141,13 +139,13 @@
                             <small>(전체 색상변경 ＆ 생크림 모양)</small>
                         </th>
                         <td>
-                            <input type="checkbox" name="option" id="option1"><label for="option1"> 색상변경(요청사항 메모) </label>
-                            <input type="checkbox" name="option" id="option2"><label for="option2"> 옵션선택X </label>
+                            <input type="radio" name="option" id="option1"><label for="option1"> 색상변경(요청사항 메모) </label>
+                            <input type="radio" name="option" id="option2"><label for="option2"> 옵션선택X </label>
                         </td>
                     </tr>
                     <tr>
                         <th>요청사항</th>
-                        <td><textarea rows="8" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
+                        <td><textarea rows="5" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
                     </tr>
                 </tbody>
 

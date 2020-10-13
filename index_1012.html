@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe__HAILLI </title>
+    <!--<link href="css/index.css" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap-yw.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fa.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index_1012.js"></script>
+</head>
+
+<body>
+   
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .banner {
+            border: 10px solid blue;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .imgs {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+        }
+
+        .imgs li {
+            position: absolute;
+            height: 100%;
+            margin: 0;
+        }
+
+        img {
+            width: 300px;
+            height: 100%;
+        }
+
+
+        .banner .butn a{
+            position: absolute;
+            top: 160px;
+            color: #333;
+            font-size: 26px;
+        }
+
+        .banner .butn .btn-prev {
+            left: 20px;
+            font-size: 50px;
+        }
+
+        .banner .butn .btn-next {
+            right: 20px;
+            font-size: 50px
+        }
+
+        .indi {
+            text-align: center;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+
+        }
+
+        .indi a {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #333;
+            border-radius: 100%;
+            text-indent: -9999em;
+            font-size: 0;
+            vertical-align: middle
+        }
+
+
+        .indi a.active {
+            background: #333;
+            width: 20px;
+            border-radius: 20px;
+        }
+        ul,li{list-style: none; margin: 0; padding: 0;}
+    </style>
+
+
+
+
+    <!--================================================-->
+
+
+
+    <div class="banner">
+       
+        <ul class="imgs">
+            <li>
+                <a><img src="img/banner.jpg" alt=""></a>
+
+            </li>
+            <li>
+                <a><img src="img/banner2.jpg" alt=""></a>
+
+            </li>
+
+        </ul>
+        
+        
+        <div class="butn">
+            <a class="btn-prev" href="#none">&lt;</a>
+            <a class="btn-next" href="#none">&gt;</a>
+        </div>
+        
+        
+        <div class="indi">
+            <a href="" class="active">1</a>
+            <a href="">2</a>
+        </div>
+        <code></code>
+
+    </div>
+
+
+
+</body></html>

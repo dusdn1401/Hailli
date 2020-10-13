@@ -1,73 +1,311 @@
 @import url(common.css);
 
 /*=========================================*/
-
-.banner input {
-    display: none;
-}
-
-.banner {
+/*.banner {
+    position: relative;
     width: 100%;
     height: 400px;
-    margin: 0 auto;
-    position: relative;
+    /*    top: 100px;*/
+/*margin: 0 auto;
+    overflow: hidden;
 }
+
 
 .banner .imgs {
     overflow: hidden;
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
 }
 
-.banner .imgs a {
-    width: 100%;
-    height: 100%;
-    margin-right: 50px;
+.banner .imgs li {
     position: absolute;
-    opacity: 0;
+    left: 0;
+    display: none;
+}
+
+.banner .imgs li:first-child {
+    display: block;
+}
+
+.banner .imgs li.active {
+    display: block;
+}
+
+.banner .imgs li a {
+    display: block;
+    text-align: center
+}
+
+.banner .imgs li a img {
+    display: block;
+    height: 400px; width:100%;
+    
+}
+
+.banner .btn-prev,
+.banner .btn-next {
+    position: absolute;
+    top: 160px;
+    color: #333;
+    font-size: 26px;
+}
+
+.banner .btn-prev {
+    left: 20px;
+    font-size: 50px;
+}
+
+.banner .btn-next {
+    right: 20px;
+    font-size:50px 
+}
+
+.indi {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+
+}
+
+.indi a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    text-indent: -9999em;
+    font-size: 0;
+    vertical-align: middle
+}
+
+
+.indi a.active {
+    background: #333;
+    width: 20px;
+    border-radius: 20px;
+}
+*/
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
 }
 
-.banner .imgs a:nth-of-type(1) {
-    background: url(../img/banner.jpg) no-repeat;
-    background-size: 100% 100%;
+.slides {
+    /*display: none*/
+}
+.slides:nth-of-type(2){display: none;}
+
+.slides a img {
+    width: 100%; height: 400px;
 }
 
-.banner .imgs a:nth-of-type(2) {
-    background: url(../img/banner2.jpg) no-repeat;
-    background-size: 100% 100%;
-}
-
-.banner .indi {
+.banner .butn a {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 160px;
+    color: #333;
+    font-size: 26px;
 }
 
-.banner .indi label {
+.banner .butn .btn-prev {
+    left: 20px;
+    font-size: 50px;
+}
+
+.banner .butn .btn-next {
+    right: 20px;
+    font-size: 50px
+}
+
+/* Slideshow container */
+.imgs {
+    /* max-width: 1000px;*/
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.indi {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+
+}
+
+.indi .dot {
+    display: inline-block;
     width: 15px;
     height: 15px;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 100%;
+    text-indent: -9999em;
+    font-size: 0;
+    vertical-align: middle
+}
+
+
+.indi .dot.active {
+    background: #333;
+    width: 20px;
+    border-radius: 20px;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+/*.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}*/
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}*/
+
+/*=======================*/
+
+/*
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imgs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.imgs li {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgs li a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.banner .butn a {
+    position: absolute;
+    top: 160px;
+    color: #333;
+    font-size: 26px;
+}
+
+.banner .butn .btn-prev {
+    left: 20px;
+    font-size: 50px;
+}
+
+.banner .butn .btn-next {
+    right: 20px;
+    font-size: 50px
+}
+
+.indi {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+
+}
+
+.indi a {
     display: inline-block;
-    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    text-indent: -9999em;
+    font-size: 0;
+    vertical-align: middle
 }
 
-.banner .indi label:hover {
+
+.indi a.active {
     background: #333;
+    width: 20px;
+    border-radius: 20px;
 }
 
-#pos1:checked ~ .indi label:nth-of-type(1),
-#pos2:checked ~ .indi label:nth-of-type(2) {
-    background: #333;
-}
 
-#pos1:checked ~ .imgs a:nth-of-type(1),
-#pos2:checked ~ .imgs a:nth-of-type(2) {
-    opacity: 1;
-}
+*/
+
 
 
 /*=========================================*/
@@ -302,7 +540,7 @@
     justify-content: center;
     margin: 50px;
     font-size: 20px;
-    color: black; 
+    color: black;
 }
 
 
@@ -385,13 +623,16 @@
         padding: 00px;
     }
 
-    .banner .imgs a:nth-of-type(1) {
+
+    /* .banner .imgs a:nth-of-type(1) img{
         background: url(../img/m1banner.jpg) no-repeat;
         background-size: 100% 100%;
+
     }
 
     .banner .imgs a:nth-of-type(2) {
         background: url(../img/m2banner.jpg) no-repeat;
         background-size: 100% 100%;
-    }
+    }*/
+
 }

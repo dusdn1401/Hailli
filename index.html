@@ -8,6 +8,9 @@
     <link href="css/bootstrap-yw.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/fa.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -40,22 +43,33 @@
             menu.classList.toggle('active');
             nav.classList.toggle('active');
         })
-
     </script>
-    <!---->
+
+
     <main>
         <div class="banner">
-            <input type="radio" name="pos" id="pos1" checked>
-            <input type="radio" name="pos" id="pos2">
-            <div class="imgs">
-                <a href="reservation.html"></a>
-                <a href="reservation.html"></a>
+            <ul class="imgs">
+                <li class="slides">
+                    <a href="reservation.html">
+                        <img src="img/banner.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slides">
+                    <a href="reservation.html">
+                        <img src="img/banner2.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="butn">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="indi">
-                <label for="pos1"></label>
-                <label for="pos2"></label>
+            <div style="text-align:center" class="indi">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
         </div>
+
         <article class="sample">
             <h2>
                 HAILLI's cake
@@ -309,6 +323,4 @@
             </li>
         </ul>
     </footer>
-</body>
-
-</html>
+</body></html>

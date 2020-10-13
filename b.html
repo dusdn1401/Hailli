@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>200821_JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+   
+    <!--===========================================-->
+    <div class="banner">
+        <ul class="imgs">
+            <li class="slides fade">
+                <a>
+                    <img src="img/banner.jpg" style="width:100% height:100%">
+                </a>
+            </li>
+            <li class="slides fade">
+                <a>
+                    <img src="img/banner2.jpg" style="width:100% height:100%">
+                </a>
+            </li>
+        </ul>
+        <div class="butn">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center" class="indi">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+
+            margin: 0
+        }
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .banner .butn a {
+            position: absolute;
+            top: 160px;
+            color: #333;
+            font-size: 26px;
+        }
+
+        .banner .butn .btn-prev {
+            left: 20px;
+            font-size: 50px;
+        }
+
+        .banner .butn .btn-next {
+            right: 20px;
+            font-size: 50px
+        }
+
+        /* Slideshow container */
+        .imgs {
+            /* max-width: 1000px;*/
+            position: relative;
+            margin: 0 auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* The dots/bullets/indicators */
+        .indi {
+            text-align: center;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+
+        }
+
+        .indi .dot {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #333;
+            border-radius: 100%;
+            text-indent: -9999em;
+            font-size: 0;
+            vertical-align: middle
+        }
+
+
+        .indi .dot.active {
+            background: #333;
+            width: 20px;
+            border-radius: 20px;
+        }
+
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+         On smaller screens, decrease text size 
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
+
+</body></html>
