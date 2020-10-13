@@ -10,6 +10,7 @@
     <link rel="icon" href="img/fa.jpg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/reservation.js"></script>
 </head>
 
 
@@ -47,28 +48,9 @@
             menu.classList.toggle('active');
             nav.classList.toggle('active');
         });
-
     </script>
-    <script>
-        $(function() {
 
-            var imgAll = document.querySelectorAll('.tab .tab-body a img')
 
-            var imgLarge = document.querySelector('.tab  p img')
-
-            for (var i = 0; i < imgAll.length; i++) {
-                imgAll[i].addEventListener('click', changeImg)
-                //strImg.src = strFun2.replace;
-            }
-
-            function changeImg() {
-                var a = this.src
-                imgLarge.src = a;
-            }
-
-        });
-
-    </script>
     <main>
 
         <div class="banner">
@@ -112,40 +94,39 @@
                     <tr>
                         <th>케이크 사이즈</th>
                         <td>
-                            <input type="radio" name="size" id="size1"> <label for="size1"> 미니 (11,000원) </label>
-                            <input type="radio" name="size" id="size2"> <label for="size2"> 1호 (24,000원) </label>
+                            <input type="radio" name="size" value="11000" onclick="sum_check()">미니 (11,000원)
+                            <input type="radio" name="size" value="24000" onclick="sum_check()"> 1호(24,000원)
                         </td>
 
                     </tr>
                     <tr>
                         <th>케이크 모양</th>
                         <td>
-                            <input type="radio" name="shape" id="shape1"> <label for="shape1"> 원형 </label>
-
-                            <input type="radio" name="shape" id="shape2"> <label for="shape2"> 하트 (+4,000원) </label>
+                            <input type="radio" name="op" value="0" onclick="sum_check()">원형
+                            <input type="radio" name="op" value="4000" onclick="sum_check()">하트(+4,000원)
                         </td>
                     </tr>
                     <tr>
                         <th>케이크 시트 맛</th>
                         <td>
-                            <input type="radio" name="sheet" id="sheet1"><label for="sheet1"> 바닐라(기본) </label>
-                            <input type="radio" name="sheet" id="sheet2"><label for="sheet2"> 초코 </label>
-                            <input type="radio" name="sheet" id="sheet3"><label for="sheet3"> 오레오 </label>
-                            <input type="radio" name="sheet" id="sheet4"><label for="sheet4"> 얼그레이 </label>
+                            <input type="radio" name="sheet" value="0" onclick="sum_check()">바닐라
+                            <input type="radio" name="sheet" value="0" onclick="sum_check()">초코
+                            <input type="radio" name="sheet" value="0" onclick="sum_check()">오레오
+                            <input type="radio" name="sheet" value="0" onclick="sum_check()">얼그레이
                         </td>
                     </tr>
                     <tr>
                         <th>생크림 모양</th>
                         <td>
-                            <input type="radio" name="cream" id="cream1"><label for="cream1"> 기본 </label>
-                            <input type="radio" name="cream" id="cream2"><label for="cream2"> 쉘 </label>
-                            <input type="radio" name="cream" id="cream3"><label for="cream3"> 리본(+1,000원) </label>
-                            <input type="radio" name="cream" id="cream4"><label for="cream4"> 꽃(+3,000원) </label>
+                            <input type="checkbox" name="op" value="0" onclick="sum_check()">기본
+                            <input type="checkbox" name="op" value="0" onclick="sum_check()">쉘
+                            <input type="checkbox" name="op" value="1000" onclick="sum_check()">리본(+1,000원)
+                            <input type="checkbox" name="op" value="3000" onclick="sum_check()">꽃(+3,000)
                         </td>
                     </tr>
                     <tr>
                         <th>케이크 문구</th>
-                        <td><textarea rows="1" cols="50" required placeholder=" 한글 15자, 영어 20자까지 가능합니다. (띄어쓰기 포함)" minlength="1" maxlength="20"></textarea></td>
+                        <td><textarea id="text" rows="1" cols="50" required placeholder=" 한글 15자, 영어 20자까지 가능합니다. (띄어쓰기 포함)" minlength="1" maxlength="20"></textarea></td>
                     </tr>
                     <tr>
                         <th>추가옵션<br>
@@ -164,16 +145,21 @@
 
                 <tfoot>
                     <tr>
+
                         <th>상품금액</th>
-                        <td>24,000원</td>
+                        <td><input type="text" class="sum" id="first" name="first" value="0" style="border:none; text-align: right;">원</td>
                     </tr>
                     <tr>
                         <th>옵션</th>
-                        <td>+4,000원</td>
+                        <td><input type="text" class="sum" id="second" name="second" value="" style="border:none; text-align: right;">원</td>
                     </tr>
+
                     <tr>
                         <th>총 결제금액</th>
-                        <td>28,000원</td>
+                        <td>
+                            <input type="text" class="sum" id="tot" name="tot" value="" style="border:none; text-align: right;">원
+
+                        </td>
                     </tr>
                 </tfoot>
 
@@ -219,6 +205,4 @@
         </ul>
     </footer>
 
-</body>
-
-</html>
+</body></html>

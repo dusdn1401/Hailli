@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe__HAILLI</title>
+    <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reservation.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/fa.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/reservation.js"></script>
+</head>
+
+
+<body>
+    
+    <div class="re">
+        <div class="tab">
+
+            <p> <img src="img/gallery/1.jpg"></p>
+
+            <div class="tab-body">
+                <a href="#" class="active"><img src="img/gallery/10.jpg" alt=""></a>
+                <a href="#"><img src="img/gallery/11.jpg" alt=""></a>
+                <a href="#"><img src="img/gallery/3.jpg" alt=""></a>
+
+            </div>
+
+        </div>
+
+        <table>
+            <tbody>
+                <!--<col width="120">
+                    <col width="*">-->
+                <tr>
+                    <th>방문 예정일 선택</th>
+                    <td>
+                        <input type="date" name="day">
+                        <select name="time">
+                            <option value="time">**방문시간 선택**</option>
+                            <option value="time">10시 ~ 11시</option>
+                            <option value="time">11시 ~ 12시</option>
+                            <option value="time">13시 ~ 14시</option>
+                            <option value="time">14시 ~ 15시</option>
+                            <option value="time">15시 ~ 16시</option>
+                            <option value="time">16시 ~ 17시</option>
+                            <option value="time">17시 ~ 18시</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>케이크 사이즈</th>
+                    <td>
+                        <input type="radio" name="chkbox" id="first" value="0" class="size1"> <label for="size1"> 미니 </label>
+                        <input type="radio" name="chkbox" id="first" value="13000" class="size2"> <label for="size2"> 1호 (+13,000원) </label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>케이크 모양</th>
+                    <td>
+                        <input type="radio" name="shape" id="shape1" value="0"> <label for="shape1"> 원형 </label>
+
+                        <input type="radio" name="shape" id="shape2" value="4000"> <label for="shape2"> 하트 (+4,000원) </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>케이크 시트 맛</th>
+                    <td>
+                        <input type="radio" name="sheet" id="sheet1" value="0"><label for="sheet1"> 바닐라(기본) </label>
+                        <input type="radio" name="sheet" id="sheet2" value="0"><label for="sheet2"> 초코 </label>
+                        <input type="radio" name="sheet" id="sheet3" value="0"><label for="sheet3"> 오레오 </label>
+                        <input type="radio" name="sheet" id="sheet4" value="0"><label for="sheet4"> 얼그레이 </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>생크림 모양</th>
+                    <td>
+                        <input type="radio" name="cream" id="cream1" value="0"><label for="cream1"> 기본 </label>
+                        <input type="radio" name="cream" id="cream2" value="0"><label for="cream2"> 쉘 </label>
+                        <input type="radio" name="cream" id="cream3" value="1000"><label for="cream3"> 리본(+1,000원) </label>
+                        <input type="radio" name="cream" id="cream4" value="3000"><label for="cream4"> 꽃(+3,000원) </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>케이크 문구</th>
+                    <td><textarea rows="1" cols="50" required placeholder=" 한글 15자, 영어 20자까지 가능합니다. (띄어쓰기 포함)" minlength="1" maxlength="20"></textarea></td>
+                </tr>
+                <tr>
+                    <th>추가옵션<br>
+                        <small>(전체 색상변경 ＆ 생크림 모양)</small>
+                    </th>
+                    <td>
+                        <input type="radio" name="option" id="option1"><label for="option1"> 색상변경(요청사항 메모) </label>
+                        <input type="radio" name="option" id="option2"><label for="option2"> 옵션선택X </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>요청사항</th>
+                    <td><textarea rows="5" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
+                </tr>
+            </tbody>
+
+
+
+            <tfoot>
+                <tr>
+                    <th>상품금액</th>
+                    <td><input type="text" class="sum" id="first" name="first" value="11000" style="border:none; text-align: right;">원</td>
+                </tr>
+                <tr>
+                    <th>옵션</th>
+                    <td><input type="text" class="sum" id="second" name="second" value="" style="border:none; text-align: right;">원</td>
+                </tr>
+
+                <tr>
+                    <th>총 결제금액</th>
+                    <td>
+                        <input type="text" class="sum" id="tot" name="tot" value="" style="border:none; text-align: right;">원
+
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+    <!--<script>
+        $(function() {
+            $('tfoot .sum').on('keyup', function() {
+                var cnt = $("tfoot.sum").length;
+                console.log(cnt);
+
+                for (var i = 1; i < cnt; i++) {
+                    var sum = parseInt($(this).val() || 0);
+                    sum++
+                    console.log(sum);
+                }
+
+                var sum1 = parseInt($("#first").val() || 0);
+                var sum2 = parseInt($("#second").val() || 0);
+
+
+                var sum = sum1 + sum2;
+                console.log(sum);
+                $("#tot").val(sum);
+            });
+
+        });
+    </script>-->
+
+
+    <div class="but">
+        <div class="button">
+            <a href="login.html">장바구니</a>
+            <a href="reservation-ok.html">예약하기</a>
+        </div>
+    </div>
+
+
+
+</body></html>
