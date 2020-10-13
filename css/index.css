@@ -480,8 +480,8 @@
 
 .best ul li {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    width: 60%;
+    margin: 50px;
+    width: 100%;
 }
 
 .best ul li img {
