@@ -237,10 +237,10 @@
                 display: none
             }
 
-            .banner img {
+           /* .banner img {
                 height: 100px;
             }
-
+*/
             .banner h2 {
                 position: absolute;
                 left: 50%;
