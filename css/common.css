@@ -110,10 +110,10 @@
         /*=======================================*/
 
         .menu-trigger {
-            width: 26px;
+            width: 25px;
             height: 16px;
             position: fixed;
-            top: 29vw;
+            top: 100px;
             right: 8vw;
             display: none;
             transition: .5s;
@@ -237,10 +237,6 @@
                 display: none
             }
 
-           /* .banner img {
-                height: 100px;
-            }
-*/
             .banner h2 {
                 position: absolute;
                 left: 50%;
@@ -263,15 +259,3 @@
             }
 
             /*======================================*/
-            /*
-
-@font-face {
-    font-family: 'THEBalsamtint';
-    src: url('THEBalsamtint.eot');
-    src: url('THEBalsamtint.eot?#iefix') format('embedded-opentype'),
-        url('THEBalsamtint.woff2') format('woff2'),
-        url('THEBalsamtint.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-unicode-range:U+0-10FFFF;
-}*/

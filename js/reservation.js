@@ -16,12 +16,15 @@
       $('#text').on('keyup', function () {
           if ($(this).val().length < 20) {
               $(this).val($(this).val().substring(0, 20))
-          }else{alert('한글 15자, 영어 20자까지 가능합니다.(띄어쓰기 포함)')}
+          } else {
+              alert('한글 15자, 영어 20자까지 가능합니다.(띄어쓰기 포함)')
+          }
       })
 
 
   });
   /*========================================*/
+
   function sum_check() {
       var val1 = 0;
       var val2 = 0;
@@ -39,14 +42,14 @@
       $("#first").val(val2);
 
 
-      var tmp2 = document.getElementsByName("op");
+      var tmp2 = document.getElementsByName("sheet");
       for (i = 0; tmp2.length > i; i++) {
           if (tmp2[i].checked) {
               var val3 = val3 + parseInt(tmp2[i].value, 10);
           }
       }
 
-      var tmp3 = document.getElementsByName("sheet");
+      var tmp3 = document.getElementsByName("op");
       for (i = 0; tmp3.length > i; i++) {
           if (tmp3[i].checked) {
               var val4 = val4 + parseInt(tmp3[i].value, 10);
