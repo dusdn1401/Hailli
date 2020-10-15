@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="input_div">
+        수량 :
+        <input type="text" size="25" value="1" id="count">
+        <input type="button" value="-" id="moins" onclick="minus()">
+        <input type="button" value="+" id="plus" onclick="plus()">
+    </div>
+    가격 : <input type="text" value="5000" id="total_count" hidden=hidden />
+    <input type="text" value="500" id="total_count_view" />
+    <hr />
+    <script>
+        var count = 1;
+        var countEl = document.getElementById("count");
+        var total_count = document.getElementById("total_count"); //추가
+        var total_count_view = document.getElementById("total_count_view"); //추가
+        function plus() {
+            count++;
+            countEl.value = count;
+            total_count_view.value = total_count.value * countEl.value; //추가
+        }
+
+        function minus() {
+
+            if (count > 1) {
+                count--;
+                countEl.value = count;
+                total_count_view.value = total_count_view.value - total_count.value; //추가  
+            }
+        }
+
+    </script>
+</body>
+
+</html>

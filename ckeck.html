@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function() {
+            $("#allCheck").click(function() {
+                if ($("#allCheck").prop("checked")) {
+                    $("input[type=checkbox]").prop("checked", true);
+                } else {
+                    $("input[type=checkbox]").prop("checked", false);
+                }
+            })
+        })
+    </script>
+    <table>
+        <tr>
+            <td>전체선택: <input type="checkbox" id="allCheck"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+</body></html>

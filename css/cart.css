@@ -3,7 +3,7 @@
 main {
     margin: 0 auto;
     width: 1080px;
-    height: 700px;
+    height: 100%;
 }
 
 .member {
@@ -128,10 +128,14 @@ main {
     width: 20%; text-align: center; 
 }
 
-.cart_table tbody {}
+.cart_table tbody {
+    width: 100%;
+
+}
 
 .cart_table tbody tr {
-    width: 100%
+    width: 100%;
+
 }
 
 .cart_table tbody td {

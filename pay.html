@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/pay.css" type="text/css">
 
     <link rel="icon" href="img/fa.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -21,7 +22,7 @@
 
     <header>
         <div class="top">
-             <h1> <a href="index.html"><img src="img/HAILLI.png"></a> </h1>
+            <h1> <a href="index.html"><img src="img/HAILLI.png"></a> </h1>
             <div class="gnb">
                 <a href="login.html"> 로그인 </a>
                 <a href="member1.html"> MY페이지 </a>
@@ -51,7 +52,6 @@
             menu.classList.toggle('active');
             nav.classList.toggle('active');
         });
-
     </script>
 
     <main>
@@ -98,12 +98,12 @@
                                     <p>사이즈: 1호(24000원), 레터링: 우리 사이 오래오래, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
                                 </td>
                                 <td>
-                                    <p><input type="number" min="1" max="10" value="1">
+                                    <p><input type="number" min="1" max="10" value="1" name="num">
                                     </p>
                                 </td>
                                 <td>
-                                    <p>
-                                        33,000원
+                                    <p name="sum">
+                                        <input type="text" name="tot">
                                     </p>
                                 </td>
                             </tr>
@@ -111,6 +111,8 @@
                     </table>
                 </div>
             </article>
+
+
 
             <!--            주문자 정보-->
             <article class="user_info">
@@ -195,6 +197,4 @@
             </li>
         </ul>
     </footer>
-</body>
-
-</html>
+</body></html>

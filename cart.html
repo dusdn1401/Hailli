@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/cart.css" type="text/css">
 
     <link rel="icon" href="img/fa.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -51,6 +52,19 @@
             menu.classList.toggle('active');
             nav.classList.toggle('active');
         });
+
+    </script>
+    <script>
+        $(function() {
+            $("#allCheck").click(function() {
+                if ($("#allCheck").prop("checked")) {
+                    $("input[type=checkbox]").prop("checked", true);
+                } else {
+                    $("input[type=checkbox]").prop("checked", false);
+                }
+            })
+        })
+
     </script>
 
     <main>
@@ -76,8 +90,8 @@
                     <div>
 
                         <label>
-                            <input type="checkbox" name="choice" value="choice">
-                            전체상품 선택
+                            
+                            전체상품 선택 <input type="checkbox" id="allCheck" name="choice">
                         </label>
 
 
@@ -102,7 +116,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="choice" value="choice">
+                                    <input type="checkbox" name="choice">
                                 </td>
                                 <td>
                                     <div>
@@ -129,7 +143,9 @@
                                     </p>
                                 </td>
                             </tr>
+
                         </tbody>
+
                     </table>
                     <div class="total">
                         <span></span>
@@ -156,4 +172,6 @@
                 <a href="pf.kakao.com/_xdfxmgT" target="_blank"> <img src="img/kakao-talk-fill.png" alt=""></a></li>
         </ul>
     </footer>
-</body></html>
+</body>
+
+</html>
