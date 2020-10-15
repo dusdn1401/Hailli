@@ -29,42 +29,44 @@ window.addEventListener('DOMContentLoaded', function () {
     /*========================================*/
 
 
-    $(this).click(function sumCheck() {
-        var val1 = 0;
-        var val2 = 0;
-        var val3 = 0;
+    $(this).click(
+        function sum_check() {
+            var val1 = 0;
+            var val2 = 0;
+            var val3 = 0;
+            var val4 = 0;
 
 
-        var tmp1 = document.getElementsByName("size");
-        for (i = 0; tmp1.length > i; i++) {
-            console.log(tmp1);
-            if (tmp1[i].checked) {
-                var val1 = parseInt(tmp1[i].value);
+            var tmp1 = document.getElementsByName("size");
+            for (i = 0; tmp1.length > i; i++) {
+                if (tmp1[i].checked) {
+                    var val2 = parseInt(tmp1[i].value, 10);
+                }
             }
-        }
 
-        $("#first").val(val1);
+            $("#first").val(val2);
 
 
-        var tmp2 = document.getElementsByName("shape");
-        for (i = 0; tmp2.length > i; i++) {
-            if (tmp2[i].checked) {
-                var val2 = val2 + parseInt(tmp2[i].value);
+            var tmp2 = document.getElementsByName("shape");
+            for (i = 0; tmp2.length > i; i++) {
+                if (tmp2[i].checked) {
+                    var val3 = val3 + parseInt(tmp2[i].value, 10);
+                }
             }
-        }
 
-        var tmp3 = document.getElementsByName("cream");
-        for (i = 0; tmp3.length > i; i++) {
-            if (tmp3[i].checked) {
-                var val3 = val3 + parseInt(tmp3[i].value);
+            var tmp3 = document.getElementsByName("cream");
+            for (i = 0; tmp3.length > i; i++) {
+                if (tmp3[i].checked) {
+                    var val4 = val4 + parseInt(tmp3[i].value, 10);
+                }
             }
+            $("#second").val(val3 + val4);
+
+            var sum = val2 + val3 + val4;
+
+            $("#tot").val(sum);
         }
-        $("#second").val(val2 + val3);
-
-        var sum = val1 + val2 + val3;
-
-        $("#tot").val(sum);
-    });
+    );
 
 
     var tmp3 = document.getElementsByName("cream");
@@ -73,7 +75,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var aa = 0;
 
     for (var i = 0; tmp3.length > i; i++) {
-
+        //sum_check();
         tmp3[i].addEventListener('click', function () {
 
             if (this.checked && aa < 2) {
