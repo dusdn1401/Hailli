@@ -53,6 +53,9 @@
             padding: 80px 0
         }
 
+        header .top h1 a img {
+            width: 200px
+        }
 
         header .top .gnb {
             position: absolute;
@@ -152,7 +155,7 @@
 
         footer {
             background: #333;
-    
+
         }
 
         footer > ul {

@@ -87,16 +87,16 @@
             <div class="cart">
                 <h2>장바구니</h2>
                 <div class="tab">
-                    <div>
+                    <div class="select">
 
                         <label>
-                            
+
                             전체상품 선택 <input type="checkbox" id="allCheck" name="choice">
                         </label>
 
 
                         <span>
-                            1개 선택
+                            삭제
                             <a href="">
                                 <img src="img/trash.png" alt="">
                             </a>
@@ -134,7 +134,12 @@
                                         요청사항: 이쁘게 잘 만들어주세요!</p>
                                 </td>
                                 <td>
-                                    <p><input type="number" min="1" max="10" value="1">
+                                    <p>
+                                        <!--<img src="img/min.png" alt="" style="width: 25px;height: 25px" onclick='javascript_:change(1);'>-->
+                                        <input type="number" min="1" max="10" value="1">
+                                        <!-- <input type='text' name='count' value='1' size='3' readonly>
+                                        <img src="img/pul.png" alt="" onclick='javascript_:change(1);' style="width: 25px;height: 25px">-->
+
                                     </p>
                                 </td>
                                 <td>
@@ -143,6 +148,8 @@
                                     </p>
                                 </td>
                             </tr>
+                            
+
 
                         </tbody>
 
@@ -157,6 +164,16 @@
             </div>
         </div>
     </main>
+    <script>
+        /*function change(num) {
+            var x = document.cart;
+            var y = Number(x.count.value) + num;
+            if (y < 1) y = 1;
+            x.count.value = y;
+        }
+*/
+
+    </script>
 
     <footer>
         <ul>

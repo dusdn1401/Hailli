@@ -39,6 +39,42 @@
         }
 
     </script>
+
+    <table class="table table-striped table-bordered" id="example">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+<script>
+    $('#searchName').autocomplete({
+       source: '{!! asset('nameAutocomplete') !!}',
+       select:function(suggestion,ui){
+           event.preventDefault();
+           var $tbody = $('#example tbody');
+           $tbody.append('<tr><td class="id">' + ui.item.id +
+               '</td><td class="name">' + ui.item.value +
+               '</td><td class="price" id="price">' + ui.item.price +
+               '</td><td><input type="text" id="quantity" value="1"/></td><td><input type="text" id="total" readonly value="'+ui.item.price+'" class="readonly"/></td></tr>');
+
+           $('#quantity').on('keyup',function(){
+               var tot = ui.item.price * this.value;
+               $('#total').val(tot);
+           });  
+       }                   
+});
+    
+    
+    </script>
 </body>
 
 </html>

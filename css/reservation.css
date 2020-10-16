@@ -313,9 +313,10 @@ tfoot tr:nth-of-type(3) {
         /*        display: block;*/
     }
 
+    /*==========================*/
     table {
         float: none;
-        width: 95%;
+        width: 90%;
         margin: 30px auto 0;
     }
 
@@ -325,37 +326,42 @@ tfoot tr:nth-of-type(3) {
 
     table tbody {
         width: 100%;
+        margin: 0 auto;
     }
 
     tbody tr {
-        width: 50%;
+        width: 100%;
         font-size: 11px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+
     }
 
     tbody tr th {
-        text-align: center;
-        width: 50%;
+        text-align: left;
+        width: 100%;
+        display: block;
     }
 
     tbody tr td {
-        text-align: start;
+        text-align: ;
+        padding-left: 20px;
     }
 
     tbody tr:nth-of-type(1) td input {
-        padding: 10px;
-        margin-bottom: 10px;
+        padding: 5px;
+        margin: 0 0 10px;
     }
 
     table tbody tr:nth-of-type(1) {}
 
-    table tbody tr:nth-of-type(1) th {
-        width: 20%;
-    }
 
     table tbody tr:nth-of-type(1) td {
-        width: 80%;
+        width: 100%;
     }
+    
 
+    /*=============================*/
     .table tfoot tr {
         font-size: 10px;
     }
@@ -365,8 +371,10 @@ tfoot tr:nth-of-type(3) {
     }
 
     tfoot {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
+        display: block;
+
     }
 
     tfoot tr {
@@ -377,14 +385,20 @@ tfoot tr:nth-of-type(3) {
 
     tfoot tr th {
         text-align: right;
-        width: 100%
+        width: 45%;
     }
 
     tfoot tr td {
-        width: 100px;
-        text-align: center;
+        width: 100%;
+        text-align: left;
         font-size: 20px;
-        padding: 10px
+        padding: 10px;
+        display: flex;
+    }
+
+    tfoot tr td input {
+        border: none;
+        text-align: center
     }
 
     tfoot tr:nth-of-type(1) {}
@@ -395,6 +409,7 @@ tfoot tr:nth-of-type(3) {
         font-size: 20px;
     }
 
+    /*====================================*/
     .but {
         width: auto;
     }
