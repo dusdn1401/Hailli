@@ -36,6 +36,7 @@
 
         header {
             background: #fff;
+            width: 100%
         }
 
         header .top {
@@ -108,6 +109,10 @@
 
         header nav a:hover:after {
             opacity: 1;
+        }
+
+        main {
+            width: 100%;
         }
 
         /*=======================================*/

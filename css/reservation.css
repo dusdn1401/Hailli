@@ -24,9 +24,8 @@
 
 
 .re {
-    width: 1080px;
+    width: 60%;
     margin: 0 auto;
-
     overflow: hidden;
 }
 
@@ -70,7 +69,9 @@ table {
     margin-top: 30px;
 }
 
-tbody {}
+tbody {
+    width: 70%;
+}
 
 tbody tr:nth-of-type(1) td input {
     padding: 10px
@@ -116,7 +117,7 @@ tbody tr td select {
 }
 
 tbody tr td textarea {
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 5px;
     background: #ededed;
@@ -167,6 +168,10 @@ tfoot tr td {
     padding: 10px
 }
 
+tfoot tr td input {
+    border: none;
+}
+
 tfoot tr:nth-of-type(1) {}
 
 tfoot tr:nth-of-type(2) {}
@@ -179,7 +184,7 @@ tfoot tr:nth-of-type(3) {
 /**********버튼**********/
 
 .but {
-    width: 1080px;
+    width: 60%;
     overflow: hidden;
     margin: 0 auto;
     padding: 20px 0;
@@ -225,7 +230,7 @@ tfoot tr:nth-of-type(3) {
 /**********상세설명**********/
 
 .list {
-    width: 1080px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -251,10 +256,38 @@ tfoot tr:nth-of-type(3) {
     margin: 10% auto;
 }
 
+/*==========================*/
+@media (max-width:1600px) {
+    .re {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    table {
+        color: #333333;
+        font-size: 15px;
+        float: none;
+        margin-top: 30px;
+        margin: 0 auto;
+    }
+
+    tbody tr:nth-of-type(1) td {
+        display: contents
+    }
+
+    .button {
+        float: none;
+        display: flex;
+    }
+
+    .list {
+        width: 90%
+    }
+}
 
 /*---------모바일 720----------*/
 
-@media (max-width:720px) {
+@media (max-width:786px) {
     main {
         width: 100%;
     }
@@ -318,22 +351,26 @@ tfoot tr:nth-of-type(3) {
         float: none;
         width: 90%;
         margin: 30px auto 0;
+        display: block;
     }
 
     table td input {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     table tbody {
         width: 100%;
         margin: 0 auto;
+        display: block
     }
 
     tbody tr {
         width: 100%;
+        padding: 20px;
         font-size: 11px;
-        display: block;
+        margin: 0 auto;
         border-bottom: 1px solid #ddd;
+        display: block;
 
     }
 
@@ -344,13 +381,22 @@ tfoot tr:nth-of-type(3) {
     }
 
     tbody tr td {
-        text-align: ;
-        padding-left: 20px;
+        text-align: center;
+
+        display: block;
+        font-size: 15px
     }
+    tbody tr td input {
+    text-align: center;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px 0 0px;
+}
 
     tbody tr:nth-of-type(1) td input {
-        padding: 5px;
-        margin: 0 0 10px;
+        padding: 7px;
+        margin: 0 20px 10px 0;
     }
 
     table tbody tr:nth-of-type(1) {}
@@ -358,8 +404,9 @@ tfoot tr:nth-of-type(3) {
 
     table tbody tr:nth-of-type(1) td {
         width: 100%;
+        display: grid;
     }
-    
+
 
     /*=============================*/
     .table tfoot tr {
@@ -371,10 +418,9 @@ tfoot tr:nth-of-type(3) {
     }
 
     tfoot {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        display: block;
-
+        display: table;
     }
 
     tfoot tr {
@@ -414,18 +460,6 @@ tfoot tr:nth-of-type(3) {
         width: auto;
     }
 
-    .button {
-        width: 100%;
-        height: 30vw;
-        text-align: center;
-    }
-
-    .but .button a {
-        width: 30%;
-        height: 30%;
-        font-size: 18px;
-        text-align: center;
-    }
 
     .list {
         width: auto;
