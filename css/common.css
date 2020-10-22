@@ -84,6 +84,8 @@
 
 
         header nav a {
+            width: 60%;
+            display: contents;
             color: #fff;
             position: relative;
             text-decoration: none !important;
