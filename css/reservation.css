@@ -65,7 +65,7 @@
 table {
     color: #333333;
     font-size: 15px;
-    float: right;
+
     margin-top: 30px;
 }
 
@@ -191,7 +191,7 @@ tfoot tr:nth-of-type(3) {
 }
 
 .button {
-    float: right;
+float: right;
     text-align: center;
     justify-content: center;
     align-content: center;
