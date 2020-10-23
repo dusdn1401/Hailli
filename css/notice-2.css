@@ -79,6 +79,7 @@
 
 .table tbody tr th:nth-of-type(2) {
     text-align: left;
+    font-size: 18px;
 }
 
 .table tbody tr th:nth-of-type(3) {

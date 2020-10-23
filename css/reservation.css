@@ -191,10 +191,8 @@ tfoot tr:nth-of-type(3) {
 }
 
 .button {
-    float: right;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+    width: 50%;
+    margin: 0 0 0 450px
 }
 
 .button a {
@@ -206,6 +204,7 @@ tfoot tr:nth-of-type(3) {
     font-size: 20px;
     border-radius: 10px;
     text-align: center;
+
 }
 
 

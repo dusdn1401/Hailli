@@ -1,8 +1,9 @@
 @import url(common.css);
 
 main {
-    margin: 0 auto 50px;
-    width: 1080px;
+    margin: 0 auto ;
+    width: 65%;
+    height: 500px;
 }
 
 

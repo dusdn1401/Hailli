@@ -82,6 +82,8 @@
 
 .table tbody tr th:nth-of-type(2) {
     text-align: left;
+    color: red;
+    font-size: 20px;
 }
 
 .table tbody tr th:nth-of-type(3) {

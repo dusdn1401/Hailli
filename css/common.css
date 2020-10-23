@@ -84,16 +84,16 @@
 
 
         header nav a {
-            width: 60%;
+            width: 100%;
             display: contents;
-            color: #fff;
+            color: white;
             position: relative;
             text-decoration: none !important;
             font-size: 20px;
             word-spacing: 150px;
         }
 
-        header nav a:after {
+       /* header nav a:after {
             content: '';
             position: absolute;
             height: 2px;
@@ -101,12 +101,12 @@
             background: white;
             left: 0;
             bottom: -5px;
-            opacity: 0;
+            opacity: 1;
             transition: .5s
-        }
+        }*/
 
         header nav a:hover {
-            color: white
+            color: #ad74ce;
         }
 
         header nav a:hover:after {

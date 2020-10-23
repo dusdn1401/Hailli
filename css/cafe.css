@@ -32,42 +32,41 @@
 .main .m1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    height: auto;
 }
 
 .main .m1 img {
     width: 50%;
-    height: 100%
+    height: 100%;
 }
 
 .main .m1 article {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 55px;
+    width: 50%;
+    height: 100%;
+    height: 100%;
     text-align: left;
-    white-space: pre-line;
 }
 
 .main .m1 article h2 {
+    padding: 0px 0 20px 55px;
     white-space: pre-line;
-    font-size: 25px;
 }
 
-.main .m1 article h2 small {
-    font-size: 15px;
+.main .m1 article h2 small {}
 
-}
-
-.main .m1 article p {
-    padding-top: 15px;
+.main .m1 p {
+    width: 100%;
+    text-align: left;
+    white-space: pre-line;
     line-height: 1.5;
-    white-space: pre-line;
-    font-size: 18px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    font-size: 20px;
 }
+
 
 .main .m2 {
     display: flex;
@@ -85,7 +84,7 @@
     display: flex;
     align-items: center;
     padding-right: 55px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .main .m2 img {
@@ -112,7 +111,7 @@
     display: flex;
     align-items: center;
     padding-left: 55px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -157,17 +156,27 @@
     }
 
     .main .m1 article h2 {
-        white-space: pre-line;
-        font-size: 20px;
+        font-size: 30px;
+        padding: 0px;
+
     }
 
     .main .m1 article h2 small {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .main .m1 article p {
+        width: 100%;
         line-height: 2;
-        font-size: 14px;
+        white-space: pre-line;
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        order: 2;
+
     }
 
     .main .m2 {
@@ -181,7 +190,7 @@
         width: 100%;
         line-height: 2;
         white-space: pre-line;
-        font-size: 14px;
+        font-size: 20px;
         padding: 30px;
         text-align: center;
         align-items: center;
@@ -192,7 +201,7 @@
 
     .main .m2 img {
         width: 100%;
-        height: 100%;
+        height: 90vw;
         order: 1;
     }
 
@@ -212,7 +221,8 @@
         width: 100%;
         line-height: 2;
         white-space: pre-line;
-        font-size: 14px;
+        font-size: 20height: 90vw;
+        px;
         padding: 0;
         text-align: center;
         align-items: center;
