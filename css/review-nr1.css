@@ -22,7 +22,7 @@
 
 /**********글 내용**********/
 .table {
-    width: 1080px;
+    width: 60%;
     margin: 50px auto;
 }
 
@@ -88,6 +88,7 @@
 .table tbody tr:nth-of-type(1) {
     line-height: 3;
     border-bottom: 1px solid #ededed;
+    font-size: 18px;
 }
 
 .table tbody tr:nth-of-type(2) {
@@ -95,7 +96,7 @@
 }
 
 .table tbody tr:nth-of-type(3) {
-    font-size: 15px;
+    font-size: 18px;
     color: #333333;
     line-height: 1.6;
     white-space: pre-line;
