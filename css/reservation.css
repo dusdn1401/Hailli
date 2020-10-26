@@ -191,15 +191,16 @@ tfoot tr:nth-of-type(3) {
 }
 
 .button {
-    width: 50%;
-    margin: 0 0 0 450px
+    text-align: right;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .button a {
-    width: 257px;
+    width: 235px;
     height: 50px;
     display: inline-block;
-    margin: 20px 5px;
+    margin: 0 0 0 20px;
     padding: 1.5% 0;
     font-size: 20px;
     border-radius: 10px;
@@ -243,11 +244,11 @@ tfoot tr:nth-of-type(3) {
 
 .list {
     width: 70%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .list header {
-    background: #fcfbe3;
+    background: #d1c0a5;
     border-radius: 30px;
     margin: 0 auto;
     display: flex;
@@ -265,7 +266,7 @@ tfoot tr:nth-of-type(3) {
 
 .list img {
     width: 100%;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 /*==========================*/

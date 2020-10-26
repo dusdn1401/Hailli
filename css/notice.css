@@ -23,9 +23,13 @@
 
 
 /**********공지리스트**********/
+main {
+    min-height: 600px;
+}
 
 .notice {
     width: 60%;
+
     margin: 0 auto;
 }
 
@@ -126,7 +130,7 @@
     margin: 40px auto;
     color: #fff;
     transition: .5s;
-    font-size: 15px;
+    font-size: 18px;
     background: #ad74ce;
     line-height: 2;
 }
